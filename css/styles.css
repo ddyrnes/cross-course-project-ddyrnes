@@ -1,0 +1,84 @@
+body {
+  font-family: sofia pro;
+  background-image: url(/images/splash.jpg);
+  background-size: cover;
+}
+
+/* Navigation */
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.nav_1 {
+  background-color: #0a3641;
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+}
+
+.nav_main,
+.nav_logo {
+  margin: 0px 239px;
+}
+
+.nav_logo {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.nav_main {
+  display: inline-block;
+}
+
+.nav_main a {
+  padding: 0px 24px;
+}
+
+.nav_2,
+.nav_2 a {
+  background-color: #b3c1c4;
+  color: #0a3641;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+/* Main */
+
+/* Splash */
+
+.splash {
+  background-color: #061e24;
+  width: 610px;
+  height: 1000px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.splash_quote {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.splash_text {
+  font-size: 1.125rem;
+}
+
+.splash_cta {
+  text-transform: uppercase;
+  background-color: #7ec850;
+  width: 400px;
+  height: 52px;
+  display: block;
+  text-align: center;
+  line-height: 52px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 4px;
+}
