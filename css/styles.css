@@ -93,6 +93,8 @@ nav a {
 .splash_text {
   font-size: 1.125rem;
   margin: 25px 105px;
+  width: 400px;
+  height: 110px;
 }
 .splash_cta_box {
 }
