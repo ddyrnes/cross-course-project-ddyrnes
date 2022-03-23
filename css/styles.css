@@ -1,7 +1,6 @@
 body {
   font-family: sofia pro;
-  background-image: url(/images/splash.jpg);
-  background-size: cover;
+  margin: 0;
 }
 
 /* Navigation */
@@ -19,6 +18,8 @@ nav a {
   width: 100%;
   height: 60px;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav_main,
@@ -33,6 +34,7 @@ nav a {
 
 .nav_main {
   display: inline-block;
+  display: flex;
 }
 
 .nav_main a {
@@ -54,22 +56,41 @@ nav a {
 /* Splash */
 
 .splash {
+  background-image: url(/images/splash.jpg);
+  background-size: cover;
+  padding: 120px 0px 0px 239px;
+}
+
+.splash_box {
   background-color: #061e24;
   width: 610px;
   height: 1000px;
   color: #fff;
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.splash_box > * {
+}
+.splash_img {
+  margin-bottom: 27px;
 }
 
 .splash_quote {
   font-size: 1.75rem;
   font-weight: bold;
+  text-align: center;
+  margin: 35px 0px;
 }
 
 .splash_text {
   font-size: 1.125rem;
+  margin: 25px 105px;
 }
-
+.splash_cta_box {
+}
 .splash_cta {
   text-transform: uppercase;
   background-color: #7ec850;
@@ -81,4 +102,10 @@ nav a {
   text-decoration: none;
   color: #fff;
   border-radius: 4px;
+  margin: 54px 0px;
 }
+
+position: relative;
+position: absolute;
+top: 50%;
+transform: translateX(-50%);
