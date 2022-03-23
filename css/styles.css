@@ -57,11 +57,16 @@ nav a {
 
 .splash {
   background-image: url(/images/splash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1564px;
+  margin: auto;
   background-size: cover;
-  padding: 120px 0px 0px 239px;
+  display: flex;
 }
 
 .splash_box {
+  margin: 120px 0px 0px 12.5%;
   background-color: #061e24;
   width: 610px;
   height: 1000px;
@@ -103,6 +108,14 @@ nav a {
   color: #fff;
   border-radius: 4px;
   margin: 54px 0px;
+}
+
+.splash_logo {
+  background-image: url(/images/rainydayslogo.png);
+  background-size: cover;
+  width: 646px;
+  height: 180px;
+  margin: 120px 0 0 140px;
 }
 
 position: relative;
