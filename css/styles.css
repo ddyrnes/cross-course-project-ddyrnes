@@ -55,6 +55,11 @@ nav a {
 
 /* Splash */
 
+h1 {
+  font-size: 7.25rem;
+  font-weight: 900;
+}
+
 .splash {
   background-image: url(/images/splash.jpg);
   background-repeat: no-repeat;
@@ -113,10 +118,6 @@ nav a {
 }
 
 .splash_logo {
-  background-image: url(/images/rainydayslogo.png);
-  background-size: cover;
-  width: 646px;
-  height: 180px;
   margin: 120px 0 0 140px;
 }
 
