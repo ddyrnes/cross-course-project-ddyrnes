@@ -76,7 +76,8 @@ h1 {
   justify-content: center;
 }
 .splash > * {
-  margin: min(5%, 160px);
+  margin-top: 5%;
+  margin-left: min(1%, 160px);
 }
 .splash_box {
   background-color: #061e24;
@@ -92,7 +93,7 @@ h1 {
 }
 .splash_logo {
   max-width: 610px;
-  min-width: 460px;
+  min-width: 360px;
 }
 .splash_logo img {
   width: 100%;
