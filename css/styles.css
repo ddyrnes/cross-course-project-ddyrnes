@@ -200,28 +200,33 @@ h2 {
 .home_about {
   background-color: #061e24;
   width: 956px;
-  height: 588;
+  height: 588px;
   color: #fff;
   border-radius: 4px;
   display: flex;
-  background-color: #b3c1c4;
   align-items: center;
   justify-content: center;
   margin: auto;
 }
 .home_about img {
-  width: 100%;
+  width: 344px;
+  height: 465px;
 }
+
 .home_about_text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: coral;
   font-size: 0.875rem;
 }
 .home_about_text h3 {
   font-size: 1.75rem;
+}
+.about_cta {
+  width: 260px;
+  height: 40px;
+  line-height: 40px;
 }
 
 /* Footer */
