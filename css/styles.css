@@ -153,6 +153,7 @@ h1 {
 .jackets_container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .jacket {
   display: grid;
