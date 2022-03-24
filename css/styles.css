@@ -1,5 +1,5 @@
 body {
-  font-family: sofia-pro;
+  font-family: sofia-pro, "Times New Roman", Times, serif;
   margin: 0;
 }
 
@@ -136,23 +136,65 @@ h1 {
 
 /* Popular Products */
 
-.popular_products {
+.background_image_body {
+  background-image: url(/images/background_image_desktop.jpg);
+  width: 100%;
+  min-height: 1000px;
+  background-repeat: no-repeat;
+}
+
+.popular_products_header {
   text-align: center;
   color: #0a3641;
   background-image: url(/images/elipse.png);
   background-repeat: no-repeat;
   background-position: bottom;
+  font-size: 3rem;
 }
-.popular_products_elipse {
+.jackets_container {
+  display: flex;
+  flex-wrap: wrap;
 }
+.jacket {
+  display: grid;
+  margin: 20px 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  grid-template-columns: 344px;
+  grid-template-rows: 464px 40px 40px;
+  justify-items: center;
+  line-height: 40px;
+  grid-template-areas:
+    "top"
+    "middle"
+    "bottom";
+}
+
+.jacket_top {
+  grid-area: top;
+  background-color: #0a3641;
+}
+.jacket_middle {
+  grid-area: middle;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.jacket_bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: bottom;
+}
+.jacket_icon {
+}
+.jacket_price {
+  margin-left: 16px;
+}
+drop-shadow(offset-x offset-y blur-radius color)
 
 /* Footer */
-
-.background_image_body {
-  background-image: url(/images/background_image_desktop.jpg);
-  width: 100%;
-  background-repeat: no-repeat;
-}
 
 footer {
   background-color: #b3c1c4;
