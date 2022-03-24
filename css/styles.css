@@ -63,21 +63,28 @@ nav a {
 h1 {
   font-size: 7.25rem;
   font-weight: 900;
+  margin: 0;
 }
 
 .splash {
   background-image: url(/images/splash.jpg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   height: 1564px;
   background-size: cover;
   display: flex;
   margin-top: 120px;
   justify-content: center;
 }
+.splash_flex {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 100px;
+  justify-content: space-evenly;
+}
+
 .splash > * {
-  margin-top: 5%;
-  margin-left: min(1%, 160px);
 }
 .splash_box {
   background-color: #061e24;
@@ -141,6 +148,7 @@ h2 {
   background-image: url(/images/background_image_desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
 }
 .popular_products_header {
   text-align: center;
@@ -197,6 +205,10 @@ h2 {
 
 /* Home About */
 
+.section_about {
+  margin-top: 160px;
+}
+
 .home_about {
   background-color: #061e24;
   width: 956px;
@@ -219,6 +231,7 @@ h2 {
   justify-content: center;
   align-items: center;
   font-size: 0.875rem;
+  padding: 60px;
 }
 .home_about_text h3 {
   font-size: 1.75rem;
