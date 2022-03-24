@@ -1,5 +1,5 @@
 body {
-  font-family: sofia pro;
+  font-family: sofia-pro;
   margin: 0;
 }
 
@@ -76,7 +76,7 @@ h1 {
   justify-content: center;
 }
 .splash > * {
-  margin: 5%;
+  margin: min(5%, 160px);
 }
 .splash_box {
   background-color: #061e24;
@@ -121,7 +121,7 @@ h1 {
 }
 .splash_cta {
   text-transform: uppercase;
-  background-color: #7ec850;
+  background-color: #538a31;
   width: 400px;
   height: 52px;
   display: block;
@@ -131,4 +131,34 @@ h1 {
   color: #fff;
   border-radius: 4px;
   margin: 54px 0px;
+  font-weight: bold;
+}
+
+/* Popular Products */
+
+.popular_products {
+  text-align: center;
+  color: #0a3641;
+  background-image: url(/images/elipse.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.popular_products_elipse {
+}
+
+/* Footer */
+
+.background_image_body {
+  background-image: url(/images/background_image_desktop.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+footer {
+  background-color: #b3c1c4;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 40px;
 }
