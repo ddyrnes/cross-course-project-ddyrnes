@@ -136,12 +136,14 @@ h1 {
 
 /* Popular Products */
 
+h2 {
+  margin: 0;
+}
 .background_image_body {
   background-image: url(/images/background_image_desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .popular_products_header {
   text-align: center;
   color: #0a3641;
@@ -149,6 +151,8 @@ h1 {
   background-repeat: no-repeat;
   background-position: bottom;
   font-size: 3rem;
+  padding-top: 160px;
+  margin-bottom: 40px;
 }
 .jackets_container {
   display: flex;
@@ -192,7 +196,6 @@ h1 {
 .jacket_price {
   margin-left: 16px;
 }
-drop-shadow(offset-x offset-y blur-radius color)
 
 /* Footer */
 
