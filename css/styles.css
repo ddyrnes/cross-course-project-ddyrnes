@@ -138,9 +138,8 @@ h1 {
 
 .background_image_body {
   background-image: url(/images/background_image_desktop.jpg);
-  width: 100%;
-  min-height: 1000px;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .popular_products_header {
