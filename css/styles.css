@@ -80,12 +80,10 @@ h1 {
   display: flex;
   width: 100%;
   flex-direction: row;
-  margin-top: 100px;
+  margin: 100px 40px 0px 40px;
   justify-content: space-evenly;
 }
 
-.splash > * {
-}
 .splash_box {
   background-color: #061e24;
   min-width: 460px;
