@@ -234,14 +234,22 @@ h2 {
 
 .home_about_text,
 .home_contact_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 0.875rem;
   margin: 10px 20px;
+  min-width: 200px;
+  max-width: 600px;
+  overflow: wrap;
 }
-
+.home_contact_text p,
+.home_about_text p {
+}
 .home_about_text h3,
 .home_contact_text h3 {
   font-size: 1.75rem;
-  text-align: center;
 }
 .about_cta,
 .contact_cta {
