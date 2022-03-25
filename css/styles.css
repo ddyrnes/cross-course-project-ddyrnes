@@ -238,12 +238,14 @@ h2 {
   flex-direction: column;
   align-items: center;
   font-size: 0.875rem;
-  margin: 10px 20px;
+  margin: 10px 40px;
   min-width: 200px;
   max-width: 400px;
+  max-width: 100%;
 }
 .home_contact_text p,
 .home_about_text p {
+  padding: 10px;
 }
 .home_about_text h3,
 .home_contact_text h3 {
