@@ -83,6 +83,7 @@ h1 {
   justify-content: space-evenly;
 }
 
+
 .splash_box {
   background-color: #061e24;
   min-width: 460px;
@@ -117,11 +118,13 @@ h1 {
   width: 400px;
   height: 110px;
 }
-
+.splash_cta_box {
+  min-width: 300px;
+  max-width: 400px;
+}
 .cta {
   text-transform: uppercase;
   background-color: #538a31;
-  width: 400px;
   height: 52px;
   display: block;
   text-align: center;
@@ -132,6 +135,7 @@ h1 {
   margin: 54px 0px;
   font-weight: bold;
 }
+
 
 /* Popular Products */
 
