@@ -30,13 +30,10 @@ nav a {
   width: 100%;
 }
 
-.nav_main,
-.nav_logo {
-}
-
 .nav_logo {
   font-size: 1.5rem;
   font-weight: bolder;
+  text-transform: uppercase;
 }
 
 .nav_main {
@@ -71,10 +68,10 @@ nav a {
 .splash_logo {
   width: 100%;
   min-height: 600px;
-  background-image: url(/images/background_image_mobile.jpg);
+  background-image: url(/images/splash_mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 30%;
+  background-position: center;
 }
 .splash_box {
   background-color: #061e24;
@@ -125,7 +122,7 @@ nav a {
   color: #fff;
   border-radius: 4px;
   font-weight: bold;
-  margin: 10px 50px;
+  margin: 24px 50px;
 }
 
 /* Popular Products */
@@ -256,6 +253,7 @@ h2 {
   width: 260px;
   height: 40px;
   line-height: 40px;
+  margin-bottom: 40px;
 }
 
 /* Footer */
