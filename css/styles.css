@@ -267,9 +267,56 @@ footer {
 
 /* Media Query */
 
-@media only screen and (max-width: 600px) {
-  /*Media Query About Contact */
+@media only screen and (max-width: 1000px) {
+  /*Media Query Nav*/
+  nav {
+    position: relative;
+  }
 
+  /*Media Query Splash */
+
+
+
+  
+  /*Media Query About Contact */
+  .section_about,
+  .section_contact {
+    margin-top: 60px;
+  }
+  .home_about_text h3,
+  .home_contact_text h3 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .home_about,
+  .home_contact {
+    width: 100%;
+    height: auto;
+    margin: 0px 11px;
+    flex-direction: column;
+  }
+  .home_contact {
+    flex-direction: column-reverse;
+  }
+  .home_about_text,
+  .home_contact_text {
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px 25px;
+  }
+  .about_cta,
+  .contact_cta {
+    width: 280px;
+    height: 44px;
+    line-height: 40px;
+  }
+  .home_about img, .home_contact img  {
+    width: 172px;
+    height: 210px;
+    margin-top: 10px;
+  }
+
+  }
   /*Media Query Footer*/
 
   footer {
