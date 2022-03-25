@@ -242,7 +242,6 @@ h2 {
   margin: 10px 20px;
   min-width: 200px;
   max-width: 600px;
-  overflow: wrap;
 }
 .home_contact_text p,
 .home_about_text p {
