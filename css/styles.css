@@ -4,6 +4,8 @@ body {
 }
 
 /* Navigation Menu Top */
+/* Navigation Menu Top */
+/* Navigation Menu Top */
 
 a {
   text-decoration: none;
@@ -55,12 +57,16 @@ nav a {
   text-align: center;
 }
 
-/* Main Content */
+/* Main */
+/* Main */
+/* Main */
 
 body > main {
   min-width: 100% !important;
 }
 
+/* Splash */
+/* Splash */
 /* Splash */
 
 .splash {
@@ -131,6 +137,8 @@ body > main {
   width: 280px;
 }
 
+/* Popular Products */
+/* Popular Products */
 /* Popular Products */
 
 h2 {
@@ -203,6 +211,9 @@ h2 {
 }
 
 /* About Contact */
+/* About Contact */
+/* About Contact */
+
 .section_about,
 .section_contact {
   margin: 60px 11px 0px 11px;
@@ -214,15 +225,15 @@ h2 {
   width: 100%;
   max-width: 500px;
   margin: auto;
-  min-height: 600px;
-  max-height: 1000px;
   color: #fff;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 16px;
 }
+
 .home_contact {
   flex-direction: column-reverse;
 }
@@ -246,8 +257,8 @@ h2 {
   max-width: 400px;
   max-width: 100%;
 }
-.home_contact_text p,
-.home_about_text p {
+.home_about_text p,
+.home_contact_text p {
   padding: 10px;
 }
 .home_about_text h3,
@@ -297,6 +308,8 @@ footer a {
 }
 
 /* Media Queries */
+/* Media Queries */
+/* Media Queries */
 
 @media only screen and (min-width: 600px) {
   .footer_mobile {
@@ -310,5 +323,52 @@ footer a {
   }
   .splash {
     margin-top: 120px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  /* Splash */
+  /* Splash */
+  /* Splash */
+
+  /* Popular Products */
+  /* Popular Products */
+  /* Popular Products */
+
+  h2 {
+    font-size: 3rem;
+  }
+  .popular_products_header {
+    background-size: 50%;
+  }
+  .jacket {
+    margin: 20px;
+    grid-template-columns: 344px;
+    grid-template-rows: 464px 40px 40px;
+  }
+  .jacket_img {
+    width: 344px;
+    height: 464px;
+  }
+
+  /* About Contact */
+  /* About Contact */
+  /* About Contact */
+
+  .home_about,
+  .home_contact {
+    max-width: 1000px;
+    height: 588px;
+    flex-direction: row;
+    margin: 160px auto;
+  }
+
+  .home_about img {
+    width: 344px;
+    height: 465px;
+  }
+  .home_contact img {
+    width: 502px;
+    height: 500px;
   }
 }
