@@ -95,7 +95,7 @@ body > main {
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .splash_quote {
@@ -335,7 +335,7 @@ footer a {
   /* Splash */
   /* Splash */
   .splash_h1_logo {
-    margin-top: 140px;
+    margin-top: 100px;
   }
   .splash_h1_logo img {
     width: 100%;
@@ -356,7 +356,7 @@ footer a {
     border-radius: 4px;
     min-width: 420px;
     height: 800px;
-    margin-top: 140px;
+    margin-top: 100px;
     margin-left: 1%;
   }
 
@@ -421,5 +421,4 @@ footer a {
 @media only screen and (min-width: 1400px) {
   .splash_box {
   min-width: 560px;
-  min-height: 1000px;
   }
