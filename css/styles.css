@@ -136,6 +136,7 @@ body > main {
   border-radius: 4px;
   font-weight: bold;
   margin: 24px 0px;
+  font-size: 1.15rem;
 }
 .splash_cta_box {
   width: 280px;
