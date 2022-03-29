@@ -173,6 +173,14 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
 }
+.jacket_container_1 {
+display: flex;
+flex-wrap: wrap;
+}
+.jacket_container_2 {
+  display: flex;
+  flex-wrap: wrap;
+}
 .jacket {
   display: grid;
   margin: 4px;
