@@ -176,10 +176,12 @@ h2 {
 .jacket_container_1 {
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
 }
 .jacket_container_2 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .jacket {
   display: grid;
