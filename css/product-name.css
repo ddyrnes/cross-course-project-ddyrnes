@@ -1,0 +1,29 @@
+.main_product_name {
+  padding: 40px 0px 120px 0px;
+}
+.product_name_specific {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: chocolate;
+  min-width: 320px;
+}
+
+.product_name_picture {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.product_name_picture img {
+  width: 300px;
+  height: 400px;
+}
+.product_name_details {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  background-color: brown;
+}

@@ -4,6 +4,10 @@ body {
   position: relative;
 }
 
+main {
+  min-height: 100vh;
+}
+
 /* Navigation Menu Top */
 /* Navigation Menu Top */
 /* Navigation Menu Top */
@@ -49,6 +53,7 @@ nav a {
   height: 60px;
   line-height: 60px;
   text-align: center;
+  font-size: 0.65rem;
 }
 
 /* Main */
