@@ -2,6 +2,11 @@
   .footer_desktop {
     bottom: 0px;
   }
+
+  .main_products_page {
+    padding-top: 140px;
+  }
+
   .nav_1 {
     background-color: #0a3641;
     color: #fff;
@@ -101,7 +106,11 @@
   h2 {
     font-size: 3rem;
   }
-  .popular_products_header {
+  .h1_products_page {
+    font-size: 2.5rem;
+  }
+  .popular_products_header,
+  .h1_products_page {
     background-size: 50%;
   }
   .jacket {

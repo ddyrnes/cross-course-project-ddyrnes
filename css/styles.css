@@ -1,6 +1,7 @@
 body {
   font-family: sofia-pro, "Times New Roman", Times, serif;
   margin: 0;
+  position: relative;
 }
 
 /* Navigation Menu Top */
@@ -280,19 +281,16 @@ h2 {
 
 /* Footer */
 
-footer {
-  position: relative;
-}
 footer a {
   color: #0a3641;
 }
 
 .footer_desktop {
-  position: relative;
+  position: absolute;
   height: 40px;
   width: 100%;
   text-align: center;
   line-height: 40px;
-  bottom: 60px;
+  bottom: 59px;
   background-color: #b3c1c4;
 }
