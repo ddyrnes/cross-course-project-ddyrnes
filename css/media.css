@@ -3,7 +3,8 @@
     bottom: 0px;
   }
 
-  .main_products_page {
+  .main_products_page,
+  .product_name_specific {
     padding-top: 140px;
   }
 
