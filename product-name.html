@@ -43,21 +43,21 @@
         </figure>
         <div class="product_name_details">
           <h1>Raincoat Name</h1>
-          <p>KR 690</p>
-
-          <div>
+          <p>kr 690</p>
+          <div class="radio_parent">
             <h2>Select a color</h2>
             <div class="color_radio">
               <input type="radio" id="radioYellow" name="radioColor" value="Yellow" />
-              <label for="radioYellow">Yellow</label>
+              <label for="radioYellow"><div class="radiotext">Yellow</div></label>
               <input type="radio" id="radioBlue" name="radioColor" value="Blue" />
-              <label for="radioBlue">Blue</label>
+              <label for="radioBlue"><div class="radiotext">Blue</div></label>
               <input type="radio" id="radioRed" name="radioColor" value="Red" />
-              <label for="radioRed">Red</label>
+              <label for="radioRed"><div class="radiotext">Red</div></label>
               <input type="radio" id="radioBlack" name="radioColor" value="Black" />
-              <label for="radioBlack">Black</label>
+              <label for="radioBlack"><div class="radiotext">Black</div></label>
             </div>
-
+          </div>
+          <div class="radio_parent">
             <h2>Size</h2>
             <div class="size_radio">
               <input type="radio" id="radioSmall" name="radiosize" value="Small" />
@@ -69,11 +69,18 @@
               <input type="radio" id="radioExtraLarge" name="radiosize" value="ExtraLarge" />
               <label for="radioExtraLarge">Extra Large</label>
             </div>
+          </div>
+          <div class="radio_parent">
+            <h2>Quantity</h2>
 
-            <div class="product_name_quantity_selector">
-              <h2>Quantity</h2>
-              <div></div>
-            </div>
+            <label for="quantity"></label>
+            <input type="text" id="quantity" name="quantity" />
+          </div>
+          <div>
+            <a href="#addtocart" class="cta">Add to cart</a>
+          </div>
+          <div>
+            <a href="#products" class="cta cta_checkout">Checkout</a>
           </div>
         </div>
       </section>
