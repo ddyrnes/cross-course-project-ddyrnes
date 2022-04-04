@@ -42,6 +42,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 80px;
 }
 .color_radio input[type="radio"] {
   opacity: 0;
@@ -90,6 +91,7 @@ label[for="radioBlack"] {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 80px;
 }
 .size_radio input[type="radio"] {
   opacity: 0;
