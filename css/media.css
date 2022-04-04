@@ -1,12 +1,46 @@
 @media only screen and (min-width: 600px) {
-  .footer_mobile {
-    display: none;
-  }
   .footer_desktop {
     bottom: 0px;
   }
   .nav_1 {
+    background-color: #0a3641;
+    color: #fff;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .nav_main {
+    top: 0px;
+    position: relative;
+    justify-content: center;
+  }
+  .nav_main a {
+    color: #fff;
+    padding: 0px 24px;
+  }
+  .nav_main img {
+    display: none;
+  }
+  .nav_logo {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+  }
+  .nav_home_button {
+    display: none;
+  }
+  .nav_1,
+  .nav_main {
     display: flex;
+    background-color: #0a3641;
+  }
+  .nav_2 {
+    top: 60px;
   }
   .splash {
     margin-top: 120px;
