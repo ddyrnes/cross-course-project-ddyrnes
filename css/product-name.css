@@ -138,7 +138,7 @@ label[for="radioBlack"] {
 /*Select Quantity*/
 /*Select Quantity*/
 
-input[type="text"] {
+input[type="number"] {
   width: 44px;
   height: 44px;
   font-size: 1.5rem;
@@ -146,14 +146,11 @@ input[type="text"] {
   margin-top: 20px;
   border-radius: 3px;
   border: 1px solid black;
+  display: inline-block;
 }
-input[type="text"]:hover {
-  padding: 1px;
-  border: 2px solid black;
-}
-input[type="text"]:focus {
-  border: 2px solid black;
-  padding: 3px;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
 }
 
 /*CTA*/
