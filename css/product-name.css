@@ -38,47 +38,48 @@ h2 {
 /*Select Color*/
 /*Select Color*/
 /*Select Color*/
-
-.product_name_select_color {
+.color_radio {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  text-align: center;
 }
-.product_name_colors {
-  display: flex;
-  flex-direction: column;
-}
-.color {
-  width: 39px;
-  height: 39px;
-  border-radius: 3px;
-}
-.color_yellow {
-  position: relative;
-  border: 3px solid black;
-  border-radius: 5px;
-}
-.color_yellow:before {
-  content: "";
-  position: absolute;
-  inset: 2px;
-  border-radius: inherit;
-  background: #fdd234;
+.color_radio input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
 }
 
-.color_blue {
-  background: blue;
+.color_radio label {
+  border-radius: 3px;
+  border: 1px solid black;
+  font-size: 0.7rem;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: white;
 }
-.color_red {
-  background: red;
+label[for="radioYellow"] {
+  background-color: #fdd234;
 }
-.color_black {
-  background: black;
+label[for="radioBlue"] {
+  background-color: #0038ff;
 }
-.selected_color_text {
-  font-weight: bolder;
+label[for="radioRed"] {
+  background-color: #ff0000;
+}
+label[for="radioBlack"] {
+  background-color: #1d3c44;
+}
+.color_radio label:hover {
+  cursor: pointer;
+  padding: 1px;
+  border: 2px solid black;
+}
+.color_radio input[type="radio"]:checked + label {
+  font-size: 0.9rem;
+  border: 3px solid black;
+  padding: 3px;
 }
 
 /*Select Size*/
