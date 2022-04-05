@@ -12,29 +12,31 @@
     <title>Rainydays / Checkout</title>
   </head>
   <body>
-    <nav>
-      <div class="nav_1">
-        <div class="nav_logo">Rainydays</div>
-        <div class="nav_main">
-          <div class="nav_home_button">
-            <a href="index.html"><img src="/images/icon_home.png" alt="home icon" />Home</a>
+    <header>
+      <nav>
+        <div class="nav_1">
+          <div class="nav_logo">Rainydays</div>
+          <div class="nav_main">
+            <div class="nav_home_button">
+              <a href="index.html"><img src="/images/icon_home.png" alt="home icon" />Home</a>
+            </div>
+            <a href="#about"><img src="/images/icon_about.png" alt="about icon" />About</a>
+            <a href="#contact"><img src="/images/icon_contact.png" alt="contact icon" />Contact</a>
+            <a href="#cart"><img src="/images/icon_cart.png" alt="cart icon" />Cart</a>
           </div>
-          <a href="#about"><img src="/images/icon_about.png" alt="about icon" />About</a>
-          <a href="#contact"><img src="/images/icon_contact.png" alt="contact icon" />Contact</a>
-          <a href="#cart"><img src="/images/icon_cart.png" alt="cart icon" />Cart</a>
         </div>
-      </div>
-      <div class="nav_2">
-        <div>
-          <a href="index.html">
-            <img src="/images/logoblack.png" alt="rainydays logo" />
-          </a>
-          <a href="index.html">Home /</a>
-          <a href="product-name.html">Product Name /</a>
-          <a href="checkout.html">Checkout</a>
+        <div class="nav_2">
+          <div>
+            <a href="index.html">
+              <img src="/images/logoblack.png" alt="rainydays logo" />
+            </a>
+            <a href="index.html">Home /</a>
+            <a href="product-name.html">Product Name /</a>
+            <a href="checkout.html">Checkout</a>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <main class="main_checkout_page">
       <section class="checkout_form">
         <h1 class="checkout_h1">Express Checkout</h1>
@@ -68,15 +70,21 @@
         <h2 class="checkout_h2">Order Summary</h2>
         <div class="summary">
           <figure><img src="/images/jacket1yellow.jpg" alt="yellow raincoat" class="summary_image" /></figure>
-          <div class="summary_info">
-            <p class="summary_info_name">Jacket Name</p>
-            <div class="summary_info_color">
+          <div class="summary_details">
+            <div>
+              <p>Jacket Name</p>
+            </div>
+            <div>
               <p>Color</p>
               <p>Yellow</p>
             </div>
-            <div class="summary_info_size">
+            <div>
               <p>Size</p>
               <p>Medium</p>
+            </div>
+            <div>
+              <p>Total</p>
+              <p>690 kr</p>
             </div>
           </div>
         </div>
