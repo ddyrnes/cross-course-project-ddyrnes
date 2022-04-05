@@ -1,6 +1,7 @@
 .product_name_p {
   margin: 0;
   font-weight: bolder;
+  text-transform: uppercase;
 }
 .product_name_h1 {
   font-size: 1.8rem;
@@ -156,3 +157,9 @@ input[type="number"]::-webkit-outer-spin-button {
 /*CTA*/
 /*CTA*/
 /*CTA*/
+
+.cta {
+  min-width: 200px;
+  max-width: 300px;
+  margin-right: 12px;
+}
