@@ -1,3 +1,6 @@
+nav {
+  z-index: 999;
+}
 .product_name_p {
   margin: 0;
   font-weight: bolder;

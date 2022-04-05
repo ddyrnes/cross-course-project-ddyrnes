@@ -8,8 +8,8 @@
     <link href="/css/checkout.css" rel="stylesheet" />
     <link href="/css/media.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/gup4qpe.css" />
-    <meta name="description" content="Here you can choose between different sizes and colors for your rainjacket" />
-    <title>Rainydays / Product Name</title>
+    <meta name="description" content="Checkout page for your rainjackets" />
+    <title>Rainydays / Checkout</title>
   </head>
   <body>
     <nav>
@@ -30,13 +30,31 @@
             <img src="/images/logoblack.png" alt="rainydays logo" />
           </a>
           <a href="index.html">Home /</a>
-          <a href="products.html">Products /</a>
-          <a href="product-name.html">Product Name</a>
+          <a href="product-name.html">Product Name /</a>
+          <a href="checkout.html">Checkout</a>
         </div>
       </div>
     </nav>
-    <main>
-      <section class="checkout_form"></section>
+    <main class="main_checkout_page">
+      <section class="checkout_form">
+        <h1 class="checkout_h1">Express Checkout</h1>
+        <div class="express_checkout">
+          <a href="#" class="cta_vipps"><img src="/images/vipps.png" alt="vipps button express checkout" /></a>
+          <a href="#" class="cta_paypal"><img src="/images/paypal.png" alt="paypal button express checkout" /></a>
+        </div>
+        <p class="p_or">OR</p>
+        <form>
+          <h2>Personal Details</h2>
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="First name" />
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Last name" />
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Email" />
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" name="phone" placeholder="Phone" />
+        </form>
+      </section>
       <section class="checkout_summary"></section>
     </main>
     <footer>

@@ -4,7 +4,8 @@
   }
 
   .main_products_page,
-  .product_name_specific {
+  .product_name_specific,
+  .main_checkout_page {
     padding-top: 140px;
   }
 
