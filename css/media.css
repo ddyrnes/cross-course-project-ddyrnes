@@ -155,13 +155,16 @@
     height: 600px;
   }
   .product_name_p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   .product_name_h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .product_name_h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+  .radio_parent label {
+    font-size: 0.9rem;
   }
 }
 

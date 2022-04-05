@@ -115,12 +115,12 @@ label[for="radioBlack"] {
 .size_radio label {
   border-radius: 3px;
   border: 1px solid black;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   width: 64px;
-  height: 30px;
-  line-height: 30px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
-  margin-right: 8px;
+  margin-right: 14px;
 }
 .size_radio label:hover {
   cursor: pointer;
