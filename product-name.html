@@ -42,43 +42,45 @@
           <p class="product_name_p">Raincoat Name</p>
         </figure>
         <div class="product_name_details">
-          <h1 class="product_name_h1">Raincoat Name</h1>
-          <p class="product_name_p">kr 690</p>
-          <div class="radio_parent">
-            <h2 class="product_name_h2">Select a color</h2>
-            <div class="color_radio">
-              <input type="radio" id="radioYellow" name="radioColor" value="Yellow" />
-              <label for="radioYellow"><div class="radiotext">Yellow</div></label>
-              <input type="radio" id="radioBlue" name="radioColor" value="Blue" />
-              <label for="radioBlue"><div class="radiotext">Blue</div></label>
-              <input type="radio" id="radioRed" name="radioColor" value="Red" />
-              <label for="radioRed"><div class="radiotext">Red</div></label>
-              <input type="radio" id="radioBlack" name="radioColor" value="Black" />
-              <label for="radioBlack"><div class="radiotext">Black</div></label>
+          <form action="/checkout.html" method="get">
+            <h1 class="product_name_h1">Raincoat Name</h1>
+            <p class="product_name_p">kr 690</p>
+            <div class="radio_parent">
+              <h2 class="product_name_h2">Select a color</h2>
+              <div class="color_radio">
+                <input type="radio" id="radioYellow" name="radioColor" value="Yellow" />
+                <label for="radioYellow"><div class="radiotext">Yellow</div></label>
+                <input type="radio" id="radioBlue" name="radioColor" value="Blue" />
+                <label for="radioBlue"><div class="radiotext">Blue</div></label>
+                <input type="radio" id="radioRed" name="radioColor" value="Red" />
+                <label for="radioRed"><div class="radiotext">Red</div></label>
+                <input type="radio" id="radioBlack" name="radioColor" value="Black" />
+                <label for="radioBlack"><div class="radiotext">Black</div></label>
+              </div>
             </div>
-          </div>
-          <div class="radio_parent">
-            <h2 class="product_name_h2">Size</h2>
-            <div class="size_radio">
-              <input type="radio" id="radioSmall" name="radiosize" value="Small" />
-              <label for="radioSmall">Small</label>
-              <input type="radio" id="radioMedium" name="radiosize" value="Medium" />
-              <label for="radioMedium">Medium</label>
-              <input type="radio" id="radioLarge" name="radiosize" value="Large" />
-              <label for="radioLarge">Large</label>
+            <div class="radio_parent">
+              <h2 class="product_name_h2">Size</h2>
+              <div class="size_radio">
+                <input type="radio" id="radioSmall" name="radiosize" value="Small" />
+                <label for="radioSmall">Small</label>
+                <input type="radio" id="radioMedium" name="radiosize" value="Medium" />
+                <label for="radioMedium">Medium</label>
+                <input type="radio" id="radioLarge" name="radiosize" value="Large" />
+                <label for="radioLarge">Large</label>
+              </div>
             </div>
-          </div>
-          <div class="radio_parent">
-            <h2 class="product_name_h2">Quantity</h2>
-            <label for="quantity"></label>
-            <input type="number" id="quantity" name="quantity" value="1" min="1" max="999" />
-          </div>
-          <div>
-            <a href="#addtocart" class="cta">Add to cart</a>
-          </div>
-          <div>
-            <a href="#products" class="cta cta_checkout">Checkout</a>
-          </div>
+            <div class="radio_parent">
+              <h2 class="product_name_h2">Quantity</h2>
+              <label for="quantity"></label>
+              <input type="number" id="quantity" name="quantity" value="1" min="1" max="999" />
+            </div>
+            <div>
+              <input type="submit" value="Add To cart" class="cta" />
+            </div>
+            <div>
+              <input type="submit" value="Checkout" class="cta cta_checkout" />
+            </div>
+          </form>
         </div>
       </section>
     </main>
