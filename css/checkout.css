@@ -3,7 +3,10 @@
   font-weight: bold;
   text-align: center;
 }
-
+.checkout_h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
 .main_checkout_page {
   padding: 60px 0px 120px 0px;
 }
@@ -53,4 +56,34 @@ select {
   box-sizing: border-box;
   margin: 8px 0;
   padding: 8px 12px;
+}
+
+/*Order Summary*/
+/*Order Summary*/
+/*Order Summary*/
+
+.summary_image {
+  width: 100px;
+}
+.summary {
+  display: flex;
+  justify-content: center;
+}
+.summary_info {
+  display: flex;
+  width: 160px;
+  flex-direction: column;
+  height: 300px;
+}
+.summary_info > * {
+  height: 40px;
+}
+.summary_info_name {
+  text-align: center;
+}
+.summary_info_color,
+.summary_info_size {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
