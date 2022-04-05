@@ -141,6 +141,14 @@ body > main {
   color: black;
   border: 2px solid #427721;
 }
+.cta_small {
+  min-width: 60px;
+  max-width: 60px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
 .splash_cta_box {
   width: 280px;
 }
@@ -171,6 +179,14 @@ body > main {
   padding-top: 60px;
   margin-bottom: 40px;
 }
+.jacket_a {
+  width: 100%;
+  margin: 0;
+}
+.jacket_a figure {
+  margin: 0px;
+}
+
 .jackets_container {
   display: flex;
   flex-wrap: wrap;
@@ -209,6 +225,7 @@ body > main {
   grid-area: middle;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
 }
 .jacket_bottom {
   display: flex;
