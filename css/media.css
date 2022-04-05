@@ -147,6 +147,22 @@
     width: 502px;
     height: 500px;
   }
+  /*Product Name*/
+  /*Product Name*/
+  /*Product Name*/
+  .product_name_picture img {
+    width: 500px;
+    height: 600px;
+  }
+  .product_name_p {
+    font-size: 1.1rem;
+  }
+  .product_name_h1 {
+    font-size: 2rem;
+  }
+  .product_name_h2 {
+    font-size: 1.2rem;
+  }
 }
 
 @media only screen and (min-width: 1400px) {

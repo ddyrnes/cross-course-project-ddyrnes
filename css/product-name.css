@@ -1,13 +1,13 @@
-p {
+.product_name_p {
   margin: 0;
   font-weight: bolder;
 }
-h1 {
+.product_name_h1 {
   font-size: 1.8rem;
   margin: 0;
   text-transform: uppercase;
 }
-h2 {
+.product_name_h2 {
   font-size: 1rem;
   text-transform: uppercase;
   margin: 0;
