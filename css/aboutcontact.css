@@ -1,0 +1,35 @@
+.main_about {
+  margin: 160px auto;
+  padding: 40px 0px 120px 0px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #061e24;
+  color: #fff;
+  min-width: 300px !important;
+  max-width: 600px !important;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h1,
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+p {
+  font-size: 0.9rem;
+}
+.about_img1 {
+  width: 300px;
+}
+.about_img2 {
+  width: 300px;
+}
+.about_img3 {
+  width: 300px;
+}

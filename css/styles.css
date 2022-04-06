@@ -192,21 +192,14 @@ input[type="reset"] {
   margin: 0px;
 }
 
-.jackets_container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.jacket_container_1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+.jackets_container,
+.jacket_container_1,
 .jacket_container_2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .jacket {
   display: grid;
   padding: 10px;
