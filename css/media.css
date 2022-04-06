@@ -7,7 +7,8 @@
   .product_name_specific,
   .main_checkout_page,
   .main_orderconfirmation,
-  .main_about {
+  .main_about,
+  .main_contact {
     padding-top: 140px;
   }
 
@@ -62,9 +63,17 @@
   /*Product Name*/
   /*Product Name*/
 
+  .contact {
+    max-width: 800px;
+  }
+
   .product_name_picture img {
     width: 400px;
     height: 500px;
+  }
+  .contact_form,
+  .contact_info {
+    width: 400px;
   }
 }
 
