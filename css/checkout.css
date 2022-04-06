@@ -12,6 +12,9 @@ p {
   font-size: 1.5rem;
   margin: 20px 0px;
 }
+.checkout_h3 {
+  margin: 0;
+}
 .main_checkout_page {
   padding: 60px 0px 120px 0px;
 }
@@ -82,7 +85,7 @@ select {
 .summary_details {
   display: flex;
   flex-direction: column;
-  min-width: 160px;
+  min-width: 180px;
 }
 .summary_details > * {
   display: flex;
@@ -90,4 +93,42 @@ select {
   justify-content: space-between;
   height: 30px;
   text-align: center;
+}
+
+.summary_details_total {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 280px;
+}
+.summary_details_total > * {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 30px;
+  text-align: center;
+  margin: 0px 20px;
+}
+.summary_details > div > p:first-child,
+.summary_details_total > div > p:first-child {
+  font-size: 0.9rem;
+}
+.summary_details > div > p:nth-child(2),
+.summary_details_total > div > p:nth-child(2) {
+  font-weight: bold;
+}
+.summary_total {
+  border-top: 1px solid #ccc;
+}
+.checkout_cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.checkout_cta > * {
+  min-width: 320px;
+  max-width: 320px;
+  margin: 10px;
 }
