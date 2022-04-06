@@ -45,7 +45,7 @@
           <a href="#" class="cta_paypal"><img src="/images/paypal.png" alt="paypal button express checkout" /></a>
         </div>
         <p class="p_or">OR</p>
-        <form>
+        <form action="/orderconfirmation.html" method="get">
           <h2>Personal Details</h2>
           <label for="firstName">First Name</label>
           <input type="text" id="firstName" name="firstName" placeholder="First name" />
@@ -71,14 +71,13 @@
           <input type="text" id="expiryDate" name="expiryDate" placeholder="Expiry Date" />
           <label for="cvccvv">CVC/CVV</label>
           <input type="text" id="cvccvv" name="cvccvv" placeholder="CVC/CVV" />
-        </form>
       </section>
       <section class="checkout_summary">
         <h2 class="checkout_h2">Order Summary</h2>
         <div class="summary">
           <figure><img src="/images/jacket1yellow.jpg" alt="yellow raincoat" class="summary_image" /></figure>
           <div class="summary_details">
-            <div>
+            <div class="summary_checkout_h3">
               <h3 class="checkout_h3">Jacket Name</h3>
             </div>
             <div>
@@ -113,6 +112,7 @@
           <input type="submit" value="Send Order" class="cta" />
           <a href="/products.html" class="cta cta_border">Continue shopping</a>
         </div>
+      </form>
       </section>
     </main>
     <footer>
