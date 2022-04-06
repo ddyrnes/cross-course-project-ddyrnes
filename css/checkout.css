@@ -17,6 +17,9 @@ p {
 }
 .main_checkout_page {
   padding: 60px 0px 120px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .checkout_form,
 .checkout_summary {
