@@ -6,7 +6,8 @@
   .main_products_page,
   .product_name_specific,
   .main_checkout_page,
-  .main_orderconfirmation {
+  .main_orderconfirmation,
+  .main_about {
     padding-top: 140px;
   }
 
@@ -56,9 +57,11 @@
   .splash {
     margin-top: 120px;
   }
+
   /*Product Name*/
   /*Product Name*/
   /*Product Name*/
+
   .product_name_picture img {
     width: 400px;
     height: 500px;
@@ -184,9 +187,27 @@
     font-size: 0.9rem;
   }
 
-  /*Checkout*/
-  /*Checkout*/
-  /*Checkout*/
+  /*About*/
+  /*About*/
+  /*About*/
+  .about {
+    flex-direction: column;
+    max-width: 800px;
+    align-items: flex-start;
+    align-items: center;
+  }
+  .about section {
+    flex-direction: row;
+    width: 600px;
+    justify-content: center;
+  }
+  .history {
+    flex-direction: row-reverse !important;
+  }
+  .about img {
+    width: 260px;
+    height: 100%;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
