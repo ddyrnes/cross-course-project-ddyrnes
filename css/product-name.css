@@ -67,26 +67,32 @@ nav {
   border-radius: 3px;
   font-size: 0.9rem;
   width: 50px;
-  height: 50px;
+  height: 100px;
   text-align: center;
+  line-height: 120px;
   color: black;
   margin-right: 16px;
 }
+
 label[for="radioYellow"] {
   background-color: #fdd234;
-}
-.radiotext {
-  position: relative;
-  top: 54px;
+  background-size: 50% auto;
+  height: 50%;
 }
 label[for="radioBlue"] {
   background-color: #0038ff;
+  background-size: 50% auto;
+  height: 50%;
 }
 label[for="radioRed"] {
   background-color: #ff0000;
+  background-size: 50% auto;
+  height: 50%;
 }
 label[for="radioBlack"] {
   background-color: #1d3c44;
+  background-size: 50% auto;
+  height: 50%;
 }
 .color_radio label:hover {
   cursor: pointer;
