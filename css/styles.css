@@ -217,6 +217,7 @@ input[type="reset"] {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
 }
 .jacket_bottom {
   display: flex;
