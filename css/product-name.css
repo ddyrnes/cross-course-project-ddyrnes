@@ -209,6 +209,7 @@ label[for="cta_animation"]:hover {
 }
 
 #cta_animation:checked + .buttontext {
+  animation: cta-animation 500ms ease;
   text-transform: uppercase;
   border: none;
   background-color: #0a3641;
@@ -225,4 +226,13 @@ label[for="cta_animation"]:hover {
   font-size: 1.15rem;
   position: absolute;
   top: 0px;
+}
+@keyframes cta-animation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
