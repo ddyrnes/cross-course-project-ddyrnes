@@ -76,12 +76,11 @@ section {
   padding: 16px;
   margin-bottom: 60px;
 }
-.contact_form label {
-  color: black;
+.contact_form,
+.contact_h2label {
+  color: #0a3641;
 }
-.contact_h2 {
-  color: black;
-}
+
 .cta_contact {
   margin: auto;
 }
