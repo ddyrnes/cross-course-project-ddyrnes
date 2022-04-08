@@ -67,9 +67,15 @@ nav a {
   margin-top: 60px;
   justify-content: center;
 }
-.splash_h1_logo img {
+.splash_logo img {
   width: 345px;
   height: 96px;
+}
+.splash_h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 }
 .splash_logo {
   width: 100%;
