@@ -127,6 +127,7 @@
   /* Popular Products */
   /* Popular Products */
   /* Popular Products */
+
   .cta_small {
     min-width: 80px;
     max-width: 80px;
@@ -176,9 +177,11 @@
     width: 502px;
     height: 500px;
   }
+
   /*Product Name*/
   /*Product Name*/
   /*Product Name*/
+
   .product_name_picture img {
     width: 500px;
     height: 600px;
@@ -199,6 +202,7 @@
   /*About*/
   /*About*/
   /*About*/
+
   .about {
     flex-direction: column;
     max-width: 800px;
