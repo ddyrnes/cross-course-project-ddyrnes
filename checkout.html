@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="/css/checkout.css" rel="stylesheet" />
+    <link href="/css/media.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/gup4qpe.css" />
+    <meta name="description" content="Checkout page for your rainjackets" />
+    <title>Rainydays / Checkout</title>
+    <!-- Hotjar Tracking Code for https://dd-rainydays.netlify.app/index.html -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3158336, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav_1">
+          <div class="nav_logo">Rainydays</div>
+          <div class="nav_main">
+            <div class="nav_home_button">
+              <a href="index.html"><img src="/images/icon_home.png" alt="home icon" />Home</a>
+            </div>
+            <a href="about.html"><img src="/images/icon_about.png" alt="about icon" />About</a>
+            <a href="contact.html"><img src="/images/icon_contact.png" alt="contact icon" />Contact</a>
+            <a href="checkout.html"><img src="/images/icon_cart.png" alt="cart icon" />Cart</a>
+          </div>
+        </div>
+        <div class="nav_2">
+          <div>
+            <a href="index.html">
+              <img src="/images/logoblack.png" alt="rainydays logo" />
+            </a>
+            <a href="index.html">Home /</a>
+            <a href="product-name.html">Product Name /</a>
+            <a href="checkout.html">Checkout</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main_checkout_page">
+      <section class="checkout_form">
+        <h1 class="checkout_h1">Express Checkout</h1>
+        <div class="express_checkout">
+          <a href="#" class="cta_vipps"><img src="/images/vipps.png" alt="vipps button express checkout" /></a>
+          <a href="#" class="cta_paypal"><img src="/images/paypal.png" alt="paypal button express checkout" /></a>
+        </div>
+        <p class="p_or">OR</p>
+        <form id="checkout_form" action="/orderconfirmation.html" method="get">
+          <h2>Personal Details</h2>
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="First name" />
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Last name" />
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Email" />
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" name="phone" placeholder="Phone" />
+          <h2>Shipping Address</h2>
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" placeholder="Address" />
+          <label for="zipCode">ZIP code</label>
+          <input type="text" id="zipCode" name="zipCode" placeholder="ZIP code" />
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" placeholder="City" />
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" placeholder="Country" />
+          <h2>Payment Method</h2>
+          <label for="cardNumber">Card Number</label>
+          <input type="text" id="cardNumber" name="cardNumber" placeholder="Card Number" />
+          <label for="expiryDate">Expiry Date</label>
+          <input type="text" id="expiryDate" name="expiryDate" placeholder="Expiry Date" />
+          <label for="cvccvv">CVC/CVV</label>
+          <input type="text" id="cvccvv" name="cvccvv" placeholder="CVC/CVV" />
+        </form>
+      </section>
+      <section class="checkout_summary">
+        <h2 class="checkout_h2">Order Summary</h2>
+        <div class="summary">
+          <figure><img src="/images/jacket1yellow.jpg" alt="yellow raincoat" class="summary_image" /></figure>
+          <div class="summary_details">
+            <div class="summary_checkout_h3">
+              <h3 class="checkout_h3">Jacket Name</h3>
+            </div>
+            <div>
+              <p>Color</p>
+              <p>Yellow</p>
+            </div>
+            <div>
+              <p>Size</p>
+              <p>Medium</p>
+            </div>
+            <div>
+              <p>Total</p>
+              <p>690 kr</p>
+            </div>
+          </div>
+        </div>
+        <div class="summary_details_total">
+          <div>
+            <p>Subtotal</p>
+            <p>690,00 kr</p>
+          </div>
+          <div>
+            <p>Shipping</p>
+            <p>60,00 kr</p>
+          </div>
+          <div class="summary_total">
+            <p>Total</p>
+            <p>750,00 kr</p>
+          </div>
+        </div>
+        <div class="checkout_cta">
+          <button form="checkout_form" type="submit" class="cta">Send Order</button>
+          <a href="/products.html" class="cta cta_border">Continue shopping</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_desktop">&copy; Daniel Dyrnes</div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+nav {
+  z-index: 999;
+}
+.product_name_p {
+  margin: 0;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.product_name_h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+.product_name_h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+.main_product_name {
+  padding: 40px 0px 120px 0px;
+}
+.product_name_specific {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 320px;
+}
+
+.product_name_picture {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.product_name_picture img {
+  width: 300px;
+  height: 400px;
+}
+.product_name_details {
+  min-width: 300px;
+  background-color: white;
+  margin: 0px 6px;
+}
+
+.radio_parent {
+  margin: 50px 0px;
+}
+
+/*Select Color*/
+/*Select Color*/
+/*Select Color*/
+.color_radio {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 80px;
+  position: relative;
+}
+.color_radio input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.color_radio label {
+  border-radius: 3px;
+  font-size: 0.9rem;
+  width: 50px;
+  height: 100px;
+  text-align: center;
+  line-height: 120px;
+  color: black;
+  margin-right: 16px;
+}
+
+label[for="radioYellow"] {
+  background-color: #fdd234;
+  background-size: 50% auto;
+  height: 50%;
+}
+label[for="radioBlue"] {
+  background-color: #0038ff;
+  background-size: 50% auto;
+  height: 50%;
+}
+label[for="radioRed"] {
+  background-color: #ff0000;
+  background-size: 50% auto;
+  height: 50%;
+}
+label[for="radioBlack"] {
+  background-color: #1d3c44;
+  background-size: 50% auto;
+  height: 50%;
+}
+.color_radio label:hover {
+  cursor: pointer;
+  padding: 1px;
+  border: 1px solid black;
+  font-size: 1.1rem;
+}
+.color_radio input[type="radio"]:checked + label {
+  border: 2px solid black;
+  padding: 3px;
+  font-size: 1.1rem;
+}
+
+/*Select Size*/
+/*Select Size*/
+/*Select Size*/
+
+.size_radio {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 60px;
+}
+.size_radio input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.size_radio label {
+  border-radius: 3px;
+  border: 1px solid black;
+  font-size: 0.8rem;
+  width: 64px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 14px;
+}
+.size_radio label:hover {
+  cursor: pointer;
+  padding: 1px;
+  border: 2px solid black;
+}
+.size_radio input[type="radio"]:checked + label {
+  border: 2px solid black;
+  padding: 3px;
+  color: white;
+  background-color: black;
+}
+
+/*Select Quantity*/
+/*Select Quantity*/
+/*Select Quantity*/
+
+input[type="number"] {
+  width: 44px;
+  height: 44px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 3px;
+  border: 1px solid black;
+  display: inline-block;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+/*CTA*/
+/*CTA*/
+/*CTA*/
+
+.cta {
+  min-width: 200px;
+  max-width: 300px;
+  margin-right: 12px;
+}
+
+.cta_animation_box {
+  position: relative;
+}
+label[for="cta_animation"] {
+  text-transform: uppercase;
+  border: none;
+  background-color: #427721;
+  min-width: 200px;
+  max-width: 300px;
+  height: 52px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  line-height: 52px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 24px 0px;
+  font-size: 1.15rem;
+}
+input[type="radio"] {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+}
+
+label[for="cta_animation"]:hover {
+  cursor: pointer;
+}
+
+#cta_animation + .buttontext {
+  display: none;
+}
+
+#cta_animation:checked + .buttontext {
+  animation: cta-animation 500ms ease;
+  text-transform: uppercase;
+  border: none;
+  background-color: #0a3641;
+  width: 300px;
+  height: 52px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  line-height: 52px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1rem;
+  position: absolute;
+  top: 0px;
+}
+@keyframes cta-animation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
