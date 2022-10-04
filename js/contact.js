@@ -10,6 +10,7 @@ const form = document.querySelector("#form");
 // });
 
 function validate(event) {
+  event.preventDefault();
   const firstName = document.getElementById("firstName");
   const lastName = document.getElementById("lastName");
   const email = document.getElementById("email");
@@ -22,7 +23,6 @@ function validate(event) {
   const success = document.querySelector(".form-success");
 
   success.innerHTML = "";
-  event.preventDefault();
 
   if (inputValidate(firstName.value, 2)) {
     firstNameError.style.display = "none";
@@ -52,19 +52,12 @@ function validate(event) {
     phoneError.style.display = "block";
     document.getElementById("phone").style.borderColor = "red";
   }
-  if (inputValidate(comments.value, 5)) {
-    commentsError.style.display = "none";
-    document.getElementById("comments").style.borderColor = "green";
-  } else {
-    commentsError.style.display = "block";
-    document.getElementById("comments").style.borderColor = "red";
-  }
+
   if (
     inputValidate(firstName.value, 2) &&
     inputValidate(lastName.value, 2) &&
     emailValidate(email.value) &&
-    phoneValidate(phone.value) &&
-    inputValidate(comments.value, 5)
+    phoneValidate(phone.value)
   ) {
     success.style.display = "block";
     success.innerHTML = `

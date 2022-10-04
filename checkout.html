@@ -54,6 +54,8 @@
       </nav>
     </header>
     <main class="main_checkout_page">
+      <div class="form-success"></div>
+
       <section class="checkout_form">
         <h1 class="checkout_h1">Express Checkout</h1>
         <div class="express_checkout">
@@ -62,7 +64,7 @@
         </div>
         <p class="p_or">OR</p>
         <form id="form">
-          <h2 class="contact_h2">Personal Details</h2>
+          <h2>Personal Details</h2>
           <div>
             <label for="firstName">First Name</label>
             <input type="text" id="firstName" name="firstName" placeholder="First name" />
@@ -83,13 +85,23 @@
             <input type="text" id="phone" name="phone" placeholder="Phone" />
             <div class="errorMsg" id="phone-error">Please enter a valid phone number</div>
           </div>
-          <div>
-            <label for="comments">Write your comments (minimum 5 characters)</label>
-            <textarea id="comments" name="comments" placeholder="Write your comments"></textarea>
-            <div class="errorMsg" id="comments-error">Please enter your comments</div>
-          </div>
-          <button type="submit" value="Submit" class="cta cta_contact">Submit</button>
-        </form>
+          <h2>Shipping Address</h2>
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" placeholder="Address" />
+          <label for="zipCode">ZIP code</label>
+          <input type="text" id="zipCode" name="zipCode" placeholder="ZIP code" />
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" placeholder="City" />
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" placeholder="Country" />
+          <h2>Payment Method</h2>
+          <label for="cardNumber">Card Number</label>
+          <input type="text" id="cardNumber" name="cardNumber" placeholder="Card Number" />
+          <label for="expiryDate">Expiry Date</label>
+          <input type="text" id="expiryDate" name="expiryDate" placeholder="Expiry Date" />
+          <label for="cvccvv">CVC/CVV</label>
+          <input type="text" id="cvccvv" name="cvccvv" placeholder="CVC/CVV" />
+
       </section>
       <section class="checkout_summary">
         <h2 class="checkout_h2">Order Summary</h2>
@@ -127,11 +139,16 @@
             <p>750,00 kr</p>
           </div>
         </div>
+        <div class="checkout_cta">
+          <button type="submit" value="Submit" class="cta cta_contact">Send Order</button>
+          <a href="/products.html" class="cta cta_border">Continue shopping</a>
+        </div>
+      </form>
       </section>
     </main>
     <footer>
       <div class="footer_desktop">&copy; Daniel Dyrnes</div>
     </footer>
-    <script src="/js/contact.js" type="module"></script>
+    <script src="/js/checkout.js" type="module"></script>
   </body>
 </html>

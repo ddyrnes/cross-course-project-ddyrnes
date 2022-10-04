@@ -1,15 +1,8 @@
 import { inputValidate, emailValidate, phoneValidate } from "./modules/validate.js";
 const form = document.querySelector("#form");
 
-// const firstName = document.getElementById("firstName");
-// firstName.addEventListener("focus", (event) => {
-//   firstName.style.backgroundColor = "";
-// });
-// firstName.addEventListener("blur", (event) => {
-//   firstName.style.backgroundColor = "green";
-// });
-
 function validate(event) {
+  event.preventDefault();
   const firstName = document.getElementById("firstName");
   const lastName = document.getElementById("lastName");
   const email = document.getElementById("email");
@@ -18,11 +11,9 @@ function validate(event) {
   const lastNameError = document.querySelector("#lastName-error");
   const emailError = document.querySelector("#email-error");
   const phoneError = document.querySelector("#phone-error");
-  const commentsError = document.querySelector("#comments-error");
   const success = document.querySelector(".form-success");
 
   success.innerHTML = "";
-  event.preventDefault();
 
   if (inputValidate(firstName.value, 2)) {
     firstNameError.style.display = "none";
@@ -52,19 +43,11 @@ function validate(event) {
     phoneError.style.display = "block";
     document.getElementById("phone").style.borderColor = "red";
   }
-  if (inputValidate(comments.value, 5)) {
-    commentsError.style.display = "none";
-    document.getElementById("comments").style.borderColor = "green";
-  } else {
-    commentsError.style.display = "block";
-    document.getElementById("comments").style.borderColor = "red";
-  }
   if (
     inputValidate(firstName.value, 2) &&
     inputValidate(lastName.value, 2) &&
     emailValidate(email.value) &&
-    phoneValidate(phone.value) &&
-    inputValidate(comments.value, 5)
+    phoneValidate(phone.value)
   ) {
     success.style.display = "block";
     success.innerHTML = `
