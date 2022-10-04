@@ -61,16 +61,28 @@
           <a href="#" class="cta_paypal"><img src="/images/paypal.png" alt="paypal button express checkout" /></a>
         </div>
         <p class="p_or">OR</p>
-        <form id="checkout_form" action="/orderconfirmation.html" method="get">
+        <form id="form">
           <h2>Personal Details</h2>
-          <label for="firstName">First Name</label>
-          <input type="text" id="firstName" name="firstName" placeholder="First name" />
-          <label for="lastName">Last Name</label>
-          <input type="text" id="lastName" name="lastName" placeholder="Last name" />
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Email" />
-          <label for="phone">Phone</label>
-          <input type="text" id="phone" name="phone" placeholder="Phone" />
+          <div>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="First name" />
+            <div class="errorMsg" id="firstName-error">Please enter your first name</div>
+          </div>
+          <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last name" />
+            <div class="errorMsg" id="lastName-error">Please enter your last name</div>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email" />
+            <div class="errorMsg" id="email-error">Please enter a valid email address</div>
+          </div>
+          <div>
+            <label for="phone">Phone (8 digits)</label>
+            <input type="text" id="phone" name="phone" placeholder="Phone" />
+            <div class="errorMsg" id="phone-error">Please enter a valid phone number</div>
+          </div>
           <h2>Shipping Address</h2>
           <label for="address">Address</label>
           <input type="text" id="address" name="address" placeholder="Address" />
@@ -126,7 +138,7 @@
           </div>
         </div>
         <div class="checkout_cta">
-          <button form="checkout_form" type="submit" class="cta">Send Order</button>
+          <button type="submit" value="Submit" class="cta cta_contact">Send Order</button>
           <a href="/products.html" class="cta cta_border">Continue shopping</a>
         </div>
       </section>
@@ -134,5 +146,6 @@
     <footer>
       <div class="footer_desktop">&copy; Daniel Dyrnes</div>
     </footer>
+    <script src="/js/checkout.js" type="module"></script>
   </body>
 </html>
