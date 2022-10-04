@@ -54,6 +54,7 @@
       </nav>
     </header>
     <main class="main_contact">
+      <div class="form-success"></div>
       <div class="contact">
         <section class="contact_info">
           <div>
@@ -66,20 +67,37 @@
           </div>
         </section>
         <section class="contact_form">
-          <form action="/contact.html" method="get">
+          <!--
+            <form id="form" action="/contact.html" method="get">
+          -->
+          <form id="form">
             <h2 class="contact_h2">Personal Details</h2>
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" placeholder="First name" />
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" placeholder="Last name" />
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Email" />
-            <label for="phone">Phone</label>
-            <input type="text" id="phone" name="phone" placeholder="Phone" />
-            <h3 class="contact_h3">Comments</h3>
-            <label for="comments">Write your comments</label>
-            <textarea id="comments" name="comments" placeholder="Write your comments"></textarea>
-            <input type="submit" value="Submit" class="cta cta_contact" />
+            <div>
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="First name" />
+              <div class="errorMsg" id="firstName-error">Please enter your first name</div>
+            </div>
+            <div>
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Last name" />
+              <div class="errorMsg" id="lastName-error">Please enter your last name</div>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Email" />
+              <div class="errorMsg" id="email-error">Please enter a valid email address</div>
+            </div>
+            <div>
+              <label for="phone">Phone (8 digits)</label>
+              <input type="text" id="phone" name="phone" placeholder="Phone" />
+              <div class="errorMsg" id="phone-error">Please enter a valid phone number</div>
+            </div>
+            <div>
+              <label for="comments">Write your comments (minimum 5 characters)</label>
+              <textarea id="comments" name="comments" placeholder="Write your comments"></textarea>
+              <div class="errorMsg" id="comments-error">Please enter your comments</div>
+            </div>
+            <button type="submit" value="Submit" class="cta cta_contact">Submit</button>
           </form>
         </section>
       </div>
@@ -87,5 +105,6 @@
     <footer>
       <div class="footer_desktop">&copy; Daniel Dyrnes</div>
     </footer>
+    <script src="/js/contact.js" type="module"></script>
   </body>
 </html>
