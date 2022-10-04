@@ -1,11 +1,19 @@
 import { inputValidate, emailValidate, phoneValidate } from "./modules/validate.js";
 const form = document.querySelector("#form");
 
+// const firstName = document.getElementById("firstName");
+// firstName.addEventListener("focus", (event) => {
+//   firstName.style.backgroundColor = "";
+// });
+// firstName.addEventListener("blur", (event) => {
+//   firstName.style.backgroundColor = "green";
+// });
+
 function validate(event) {
-  const firstName = event.target.firstName;
-  const lastName = event.target.lastName;
-  const email = event.target.email;
-  const phone = event.target.phone;
+  const firstName = document.getElementById("firstName");
+  const lastName = document.getElementById("lastName");
+  const email = document.getElementById("email");
+  const phone = document.getElementById("phone");
   const firstNameError = document.querySelector("#firstName-error");
   const lastNameError = document.querySelector("#lastName-error");
   const emailError = document.querySelector("#email-error");
