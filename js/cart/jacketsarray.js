@@ -1,4 +1,4 @@
-let jackets = [
+export let jackets = [
   {
     name: "Jacket 1",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius tincidunt non cursus id fusce.",
@@ -52,4 +52,4 @@ let jackets = [
     image: "/images/jacket8.jpg",
   },
 ];
-console.log(jackets[3].price);
+console.log("The price of jacket nr 4 is " + jackets[3].price + " NOK");
