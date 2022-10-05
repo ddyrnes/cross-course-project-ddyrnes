@@ -4,6 +4,12 @@
   display: none;
   position: absolute;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 20px;
+}
 p {
   margin: 0;
 }
@@ -12,6 +18,9 @@ p {
   font-size: 1.4rem;
   font-weight: bold;
   text-align: center;
+}
+h2 {
+  margin: 0px;
 }
 .checkout_h2 {
   text-align: center;

@@ -15,3 +15,23 @@ export function phoneValidate(phone) {
   const phoneValid = regEx.test(phone);
   return phoneValid;
 }
+export function zipCodeValidate(zipCode) {
+  var regEx = /^\d{4}$/;
+  const zipCodeValid = regEx.test(zipCode);
+  return zipCodeValid;
+}
+export function cardNumberValidate(cardNumber) {
+  var regEx = /^\d{16}$/;
+  const cardNumberValid = regEx.test(cardNumber);
+  return cardNumberValid;
+}
+export function expiryDateValidate(expiryDate) {
+  var regEx = /^\d{2}\/\d{2}$/g;
+  const expiryDateValid = regEx.test(expiryDate);
+  return expiryDateValid;
+}
+export function cvccvvValidate(cvccvv) {
+  var regEx = /^[0-9]{3,4}$/;
+  const cvccvvValid = regEx.test(cvccvv);
+  return cvccvvValid;
+}
