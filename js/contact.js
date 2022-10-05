@@ -21,6 +21,7 @@ function validate(event) {
   const phoneError = document.querySelector("#phone-error");
   const commentsError = document.querySelector("#comments-error");
   const success = document.querySelector(".form-success");
+  const contact = document.querySelector(".contact");
 
   success.innerHTML = "";
 
@@ -52,20 +53,32 @@ function validate(event) {
     phoneError.style.display = "block";
     document.getElementById("phone").style.borderColor = "red";
   }
+  if (inputValidate(comments.value, 5)) {
+    commentsError.style.display = "none";
+    document.getElementById("comments").style.borderColor = "green";
+  } else {
+    commentsError.style.display = "block";
+    document.getElementById("comments").style.borderColor = "red";
+  }
 
   if (
     inputValidate(firstName.value, 2) &&
     inputValidate(lastName.value, 2) &&
     emailValidate(email.value) &&
-    phoneValidate(phone.value)
+    phoneValidate(phone.value) &&
+    inputValidate(comments.value, 5)
   ) {
     success.style.display = "block";
+    contact.style.display = "none";
+    window.scrollTo(0, 0);
     success.innerHTML = `
       <div class="success-box">
-      <div>Thank you!</div>
+      <h2>Thank you!</h2>
       <div>Your submission has been sent.</div>
-      <div>Would you like to return to the <a href="index.html">Home Page</a> or <a href="products.html">Continue Shopping<a/></div>
-      </div>`;
+      <div>Would you like to return to the:</div>
+      <div><a class="cta cta_border" href="index.html">Home Page</a>
+      or
+      <a class="cta" href="products.html">Continue Shopping<a/></div>`;
   }
 }
 form.addEventListener("submit", validate);
