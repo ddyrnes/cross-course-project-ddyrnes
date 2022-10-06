@@ -118,14 +118,15 @@ function validate(event) {
     inputValidate(lastName.value, 2) &&
     emailValidate(email.value) &&
     phoneValidate(phone.value) &&
-    addressValidate(address.value, 3) &&
-    zipCodeValidate(address.value) &&
+    inputValidate(address.value, 3) &&
+    zipCodeValidate(zipCode.value) &&
     inputValidate(city.value, 2) &&
     inputValidate(country.value, 2) &&
     cardNumberValidate(cardNumber.value) &&
     expiryDateValidate(expiryDate.value) &&
     cvccvvValidate(cvccvv.value)
   ) {
+    localStorage.clear();
     location.href = "orderconfirmation.html";
   }
 }

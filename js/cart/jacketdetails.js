@@ -50,7 +50,7 @@ export function jacketDetailDisplay() {
             <div>
               <button class="cta" id="add-to-cart" data-id="${id.id}">Add to cart</button>
               <a href="products.html" class="cta cta_border">Continue Shopping</a>
-              <input type="submit" value="Checkout" class="cta cta_border" />
+              <a href="checkout.html" class="cta cta_border">Checkout</a>
             </div>
 
         </div>
