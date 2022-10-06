@@ -11,7 +11,16 @@ main {
 /* Navigation Menu Top */
 /* Navigation Menu Top */
 /* Navigation Menu Top */
-
+.cart_number {
+  color: black;
+  font-size: 1.45rem;
+  margin-left: 6px;
+  background-color: white;
+  border-radius: 100%;
+  width: 28px;
+  height: 28px;
+  line-height: 25px;
+}
 a {
   text-decoration: none;
   color: inherit;

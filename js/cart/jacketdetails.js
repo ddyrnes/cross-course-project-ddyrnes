@@ -14,7 +14,7 @@ export function jacketDetailDisplay() {
           <p class="product_name_p">${id.name}</p>
         </figure>
         <div class="product_name_details">
-          <form action="/checkout.html" method="get">
+          <form method="get">
             <h1 class="product_name_h1">${id.name}</h1>
             <p class="product_name_p">${id.price} NOK</p>
             <div class="radio_parent">
@@ -46,22 +46,29 @@ export function jacketDetailDisplay() {
               <label for="quantity"></label>
               <input type="number" id="quantity" name="quantity" value="1" min="1" max="999" />
             </div>
-              <button class="cta add-to-cart" data-id="${id.id}">Add to cart</button>
+            </form>
             <div>
+              <button class="cta" id="add-to-cart" data-id="${id.id}">Add to cart</button>
               <a href="products.html" class="cta cta_border">Continue Shopping</a>
               <input type="submit" value="Checkout" class="cta cta_border" />
             </div>
-          </form>
+
         </div>
       </section>
   `;
 }
 jacketDetailDisplay();
+
 // document.querySelector('[data-id="box1"]')
-const productThumbnail = document.querySelector(`[data-id="${id.id}"]`);
-let testy = productThumbnail.dataset.id;
-console.log(testy);
-// const button = productThumbnail.querySelector(".add-to-cart");
+// const productThumbnail = document.querySelector("data-id");
+// console.log(productThumbnail);
+// let testy = productThumbnail.dataset.id;
+// console.log(testy);
+// const button = productThumbnail.querySelectorAll(".add-to-cart");
+// console.log(button);
+// button.addEventlistener("click", () => {
+//   console.log(testy);
+// });
 // button.addEventListener("click", function (event) {
 //   const product = {
 //     id: productThumbnail.dataset.id,
