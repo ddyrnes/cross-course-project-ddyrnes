@@ -5,13 +5,12 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const jacketId = params.get("id");
 let id = jackets.find((item) => item.id === jacketId);
-console.log(id);
 
 export function jacketDetailDisplay() {
   selectContainer.innerHTML = `
   <section class="product_name_specific">
         <figure class="product_name_picture">
-          <img src="${id.image}" alt="Yellow Raincoat" />
+          <img src="${id.image}" alt="{id.name}" />
           <p class="product_name_p">${id.name}</p>
         </figure>
         <div class="product_name_details">
@@ -47,11 +46,7 @@ export function jacketDetailDisplay() {
               <label for="quantity"></label>
               <input type="number" id="quantity" name="quantity" value="1" min="1" max="999" />
             </div>
-            <div class="cta_animation_box">
-              <label for="cta_animation" class="button">Add to cart</label>
-              <input id="cta_animation" type="radio" name="showMessage" />
-              <div class="buttontext">Raincoat added to cart</div>
-            </div>
+              <button class="cta add-to-cart" data-id="${id.id}">Add to cart</button>
             <div>
               <a href="products.html" class="cta cta_border">Continue Shopping</a>
               <input type="submit" value="Checkout" class="cta cta_border" />
@@ -62,3 +57,25 @@ export function jacketDetailDisplay() {
   `;
 }
 jacketDetailDisplay();
+// document.querySelector('[data-id="box1"]')
+const productThumbnail = document.querySelector(`[data-id="${id.id}"]`);
+let testy = productThumbnail.dataset.id;
+console.log(testy);
+// const button = productThumbnail.querySelector(".add-to-cart");
+// button.addEventListener("click", function (event) {
+//   const product = {
+//     id: productThumbnail.dataset.id,
+//   };
+//   addToCart(product);
+// });
+// function addToCart(product) {
+//   const cart = loadFromStorage("cart");
+//   cart.push(product);
+//   saveToStorage("cart", cart);
+// }
+
+/* <div class="cta_animation_box">
+<label for="cta_animation" class="button" id="addtocart" data-id="">Add to cart</label>
+<input id="cta_animation" type="radio" name="showMessage" />
+<div class="buttontext">Raincoat added to cart</div>
+</div> */
