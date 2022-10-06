@@ -1,6 +1,6 @@
 export let jackets = [
   {
-    id: "000001",
+    id: "100001",
     name: "Jacket 1",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius tincidunt non cursus id fusce.",
     price: "699.00",
@@ -9,14 +9,14 @@ export let jackets = [
     onsale: "true",
   },
   {
-    id: "000002",
+    id: "100002",
     name: "Jacket 2",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius tincidunt non cursus id fusce.",
     price: "599.00",
     image: "/images/jacket2red.jpg",
   },
   {
-    id: "000003",
+    id: "100003",
     name: "Jacket 3",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius tincidunt non cursus id fusce.",
     price: "799.00",
@@ -24,14 +24,14 @@ export let jackets = [
     popular: "true",
   },
   {
-    id: "000004",
+    id: "100004",
     name: "Jacket 4",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius tincidunt non cursus id fusce.",
     price: "899.00",
     image: "/images/jacket4black.jpg",
   },
   {
-    id: "000005",
+    id: "100005",
     name: "Jacket 5",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius tincidunt non cursus id fusce.",
     price: "1199.00",
@@ -39,21 +39,21 @@ export let jackets = [
     popular: "true",
   },
   {
-    id: "000006",
+    id: "100006",
     name: "Jacket 6",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius tincidunt non cursus id fusce.",
     price: "749.00",
     image: "/images/jacket6.jpg",
   },
   {
-    id: "000007",
+    id: "100007",
     name: "Jacket 7",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius tincidunt non cursus id fusce.",
     price: "899.00",
     image: "/images/jacket7.jpg",
   },
   {
-    id: "000008",
+    id: "100008",
     name: "Jacket 8",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius tincidunt non cursus id fusce.",
     price: "499.00",
