@@ -170,7 +170,6 @@ input[type="number"]::-webkit-outer-spin-button {
 .cta {
   min-width: 200px;
   max-width: 300px;
-  margin-right: 12px;
 }
 
 .cta_animation_box {

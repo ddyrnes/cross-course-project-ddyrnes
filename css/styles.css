@@ -194,12 +194,12 @@ input[type="button"] {
   margin: 0px;
 }
 
-.jackets_container,
-.jacket_container_1,
-.jacket_container_2 {
+.jacket_container_1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: auto;
+  max-width: 80%;
 }
 
 .jacket {

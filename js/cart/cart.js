@@ -1,3 +1,3 @@
 import { jackets } from "./jacketsarray.js";
-
-console.log(jackets);
+import { jacketsDisplay } from "./jacketsdisplay.js";
+// import { jacketDetailDisplay } from "./jacketdetails.js";
