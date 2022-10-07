@@ -36,7 +36,6 @@ function addItem(cartId) {
     localStorage.setItem(cartId, 1);
   }
 }
-
 refreshCart();
 
 // document.getElementById("addtocart");
