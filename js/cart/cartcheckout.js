@@ -55,7 +55,7 @@ function cartTotalCheckout() {
             </div>
             <div>
               <p>Subtotal:</p>
-              <p>${subTotal} NOK</p>
+              <p>${subTotal.toFixed(2)} NOK</p>
             </div>
 
           </div>
@@ -65,7 +65,7 @@ function cartTotalCheckout() {
       cartSumTotal.innerHTML = `
       <div class="summary_checkout_h3 summary_checkout_total">
         <p>Total</p>
-        <h3 class="checkout_h3">${total} NOK</h3>
+        <h3 class="checkout_h3">${total.toFixed(2)} NOK</h3>
       </div>
       `;
     }
