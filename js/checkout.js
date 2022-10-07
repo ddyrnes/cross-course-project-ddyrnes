@@ -36,6 +36,8 @@ function validate(event) {
   const cvccvv = document.getElementById("cvccvv");
   const cvccvvError = document.querySelector("#cvccvv-error");
 
+  const ctaError = document.querySelector(".send_order_cta_error");
+
   if (inputValidate(firstName.value, 2)) {
     firstNameError.style.display = "none";
     document.getElementById("firstName").style.borderColor = "green";
@@ -128,6 +130,13 @@ function validate(event) {
   ) {
     localStorage.clear();
     location.href = "orderconfirmation.html";
+  } else {
+    ctaError.innerHTML = `<div class="cta_error">
+    <p class="cta_error_p">We apologize!</p>
+    <p>We are unable to submit the form.</p>
+    <p>Please check that everything is filled out properly and try again.</p>
+  
+    </div>`;
   }
 }
 form.addEventListener("submit", validate);

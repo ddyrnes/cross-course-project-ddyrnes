@@ -4,6 +4,23 @@ import { jackets } from "./jacketsarray.js";
 // console.log(getCart);
 const createCheckout = document.querySelector(".checkout_cart_summary");
 const cartSumTotal = document.querySelector(".summary_total");
+
+const sendOrderbutton = document.querySelector(".button_cart_empty");
+
+sendOrderbutton.style.backgroundColor = "gray";
+
+if (localStorage.getItem("addItemToCart")) {
+  // here we set the var to true
+  sendOrderbutton.disabled = false;
+  sendOrderbutton.style.backgroundColor = "#427721";
+  console.log("test1");
+} else {
+  sendOrderbutton.disabled = true;
+  sendOrderbutton.style.backgroundColor = "gray";
+
+  console.log("test2");
+}
+
 function cartTotalCheckout() {
   let total = 0;
 
