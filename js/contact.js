@@ -23,6 +23,8 @@ function validate(event) {
   const success = document.querySelector(".form-success");
   const contact = document.querySelector(".contact");
 
+  const ctaError = document.querySelector(".send_order_cta_error");
+
   success.innerHTML = "";
 
   if (inputValidate(firstName.value, 2)) {
@@ -79,6 +81,13 @@ function validate(event) {
       <div><a class="cta cta_border" href="index.html">Home Page</a>
       or
       <a class="cta" href="products.html">Continue Shopping<a/></div>`;
+  } else {
+    ctaError.innerHTML = `<div class="cta_error">
+      <p class="cta_error_p">We apologize!</p>
+      <p>We are unable to submit the form.</p>
+      <p>Please check that everything is filled out properly and try again.</p>
+    
+      </div>`;
   }
 }
 form.addEventListener("submit", validate);
