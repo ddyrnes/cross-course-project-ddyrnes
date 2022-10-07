@@ -13,13 +13,33 @@ main {
 /* Navigation Menu Top */
 .cart_number {
   color: black;
-  font-size: 1.45rem;
-  margin-left: 6px;
+  margin-left: 2px;
   background-color: white;
   border-radius: 100%;
-  width: 28px;
-  height: 28px;
-  line-height: 25px;
+  font-size: 1.15rem;
+  width: 24px;
+  height: 24px;
+  line-height: 21px;
+}
+.cart_item_added {
+  background-color: white;
+  border: 2px solid green;
+  position: absolute;
+  color: black;
+  border-radius: 10px;
+  z-index: 1;
+  padding: 30px 14px;
+  bottom: 40px;
+  right: 5px;
+  width: 160px;
+  font-size: 1.2rem;
+}
+.cart_item_parent {
+  position: relative;
+}
+.summary_checkout_total {
+  margin-right: 1%;
+  text-align: center;
 }
 a {
   text-decoration: none;

@@ -1,19 +1,19 @@
 import { jackets } from "./jacketsarray.js";
+import { refreshCart } from "./refreshcart.js";
 
 let addtocart = document.getElementById("add-to-cart");
 let cartId = addtocart.getAttribute("data-id");
 let cartNumberDisplay = document.querySelector(".cart_number");
+const cart_item_added = document.querySelector(".cart_item_added");
+cart_item_added.style.display = "none";
 
 addtocart.addEventListener("click", () => {
   addItemToCart(cartId);
+  setTimeout(function () {
+    cart_item_added.style.display = "none";
+  }, 3000);
+  cart_item_added.style.display = "block";
 });
-
-function refreshCart() {
-  let productNumber = localStorage.getItem("addItemToCart");
-  if (productNumber) {
-    cartNumberDisplay.textContent = productNumber;
-  }
-}
 
 function addItemToCart(cartId) {
   let productNumber = localStorage.getItem("addItemToCart");
@@ -36,6 +36,7 @@ function addItem(cartId) {
     localStorage.setItem(cartId, 1);
   }
 }
+
 refreshCart();
 
 // document.getElementById("addtocart");

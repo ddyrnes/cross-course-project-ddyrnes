@@ -3,7 +3,6 @@ const selectContainer = document.querySelector(".jacket_container_1");
 
 export function popularJackets() {
   for (let i = 0; i < jackets.length; i++) {
-    console.log(jackets[i].price);
     if (jackets[i].popular) {
       selectContainer.innerHTML += `
       <a href="/product-name.html?id=${jackets[i].id}" class="jacket_a">

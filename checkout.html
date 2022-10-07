@@ -22,7 +22,9 @@
             </div>
             <a href="about.html"><img src="/images/icon_about.png" alt="about icon" />About</a>
             <a href="contact.html"><img src="/images/icon_contact.png" alt="contact icon" />Contact</a>
-            <a href="checkout.html"><img src="/images/icon_cart.png" alt="cart icon" />Cart</a>
+            <a class="cart_item_parent" href="checkout.html"
+              ><img src="/images/icon_cart.png" alt="cart icon" />Cart <span class="cart_number">0</span></a
+            >
           </div>
         </div>
         <div class="nav_2">
@@ -31,7 +33,7 @@
               <img src="/images/logoblack.png" alt="rainydays logo" />
             </a>
             <a href="index.html">Home /</a>
-            <a href="product-name.html">Product Name /</a>
+            <a href="products.html">Products /</a>
             <a href="checkout.html">Checkout</a>
           </div>
         </div>
@@ -107,14 +109,16 @@
           </div>
       </section>
       <section class="checkout_summary">        
+      <div class="checkout_cart_summary">
+          <h2 class="checkout_h2">Order Summary</h2>
+      </div>
+          <div class="summary_total">
+          </div>
         <div class="checkout_cta">
           <button type="submit" value="submit" class="cta cta_contact">Send Order</button>
           <a href="/products.html" class="cta cta_border">Continue shopping</a>
         </div>
       </form>
-      <div class="checkout_cart_summary">
-        <h2 class="checkout_h2">Order Summary</h2>
-        
       </section>
     </main>
     <footer>
@@ -122,6 +126,7 @@
     </footer>
     <script src="/js/checkout.js" type="module"></script>
     <script src="/js/cart/cartcheckout.js" type="module"></script>
+    <script src="/js/cart/refreshcart.js" type="module"></script>
   </body>
 </html>
 

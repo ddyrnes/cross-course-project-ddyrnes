@@ -11,7 +11,28 @@
   .main_contact {
     padding-top: 140px;
   }
-
+  .cart_number {
+    margin-left: 10px;
+    font-size: 1.45rem;
+    width: 32px;
+    height: 32px;
+    line-height: 28px;
+  }
+  .cart_item_added {
+    padding: 30px 20px;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    height: 80px;
+    font-size: 1.5rem;
+  }
+  .summary_checkout_total {
+    text-align: end;
+    margin-right: 40px;
+  }
+  .cart_item_parent {
+    position: relative;
+  }
   .nav_1 {
     background-color: #0a3641;
     color: #fff;

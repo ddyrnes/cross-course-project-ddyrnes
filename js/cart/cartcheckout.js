@@ -3,6 +3,7 @@ import { jackets } from "./jacketsarray.js";
 // const getCart = localStorage.getItem([1]);
 // console.log(getCart);
 const createCheckout = document.querySelector(".checkout_cart_summary");
+const cartSumTotal = document.querySelector(".summary_total");
 function cartTotalCheckout() {
   let total = 0;
 
@@ -17,19 +18,18 @@ function cartTotalCheckout() {
       let price = jackets.find(findId).price;
       let numberOfItems = localStorage.getItem(key);
       let subTotal = price * numberOfItems;
-      console.log("Price=", total);
       total += subTotal;
-      console.log(total);
 
       createCheckout.innerHTML += `
   <div class="summary">
           <img src="${jackets.find(findId).image}" alt="${jackets.find(findId).name}" class="summary_image" />
           <div class="summary_details">
             <div class="summary_checkout_h3">
+              <p>Name:</p>
               <h3 class="checkout_h3">${jackets.find(findId).name}</h3>
             </div>
             <div>
-              <p>Price</p>
+              <p>Price:</p>
               <p>${jackets.find(findId).price} NOK</p>
             </div>
             <div>
@@ -37,25 +37,25 @@ function cartTotalCheckout() {
               <p>${localStorage.getItem(key)}</p>
             </div>
             <div>
-              <p>Total</p>
+              <p>Subtotal:</p>
               <p>${subTotal} NOK</p>
             </div>
 
           </div>
         </div>
-        <div class="summary_details_total">
-          <div class="summary_total">
-            <p>Total</p>
-            <p>${total}</p>
-          </div>
-        </div>
       </div>
   `;
+      cartSumTotal.innerHTML = `
+      <div class="summary_checkout_h3 summary_checkout_total">
+        <p>Total</p>
+        <h3 class="checkout_h3">${total} NOK</h3>
+      </div>
+      `;
     }
   }
 }
+
 cartTotalCheckout();
-console.log(total);
 // function cartTotal() {
 //   let total = 0;
 
