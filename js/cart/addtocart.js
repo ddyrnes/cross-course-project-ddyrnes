@@ -1,9 +1,9 @@
 import { jackets } from "./jacketsarray.js";
 import { refreshCart } from "./refreshcart.js";
 
-let addtocart = document.getElementById("add-to-cart");
-let cartId = addtocart.getAttribute("data-id");
-let cartNumberDisplay = document.querySelector(".cart_number");
+const addtocart = document.getElementById("add-to-cart");
+const cartId = addtocart.getAttribute("data-id");
+const cartNumberDisplay = document.querySelector(".cart_number");
 const cart_item_added = document.querySelector(".cart_item_added");
 cart_item_added.style.display = "none";
 

@@ -13,12 +13,9 @@ if (localStorage.getItem("addItemToCart")) {
   // here we set the var to true
   sendOrderbutton.disabled = false;
   sendOrderbutton.style.backgroundColor = "#427721";
-  console.log("test1");
 } else {
   sendOrderbutton.disabled = true;
   sendOrderbutton.style.backgroundColor = "gray";
-
-  console.log("test2");
 }
 
 function cartTotalCheckout() {
@@ -57,6 +54,14 @@ function cartTotalCheckout() {
               <p>Subtotal:</p>
               <p>${subTotal.toFixed(2)} NOK</p>
             </div>
+            <div>
+              <button class="button_add_jacket" data-id="${jackets.find(findId).id}" 
+              data-jacketvalue="${localStorage.getItem(key)}">+</button>
+              <button class="button_remove_jacket" data-id="${jackets.find(findId).id}" 
+              data-jacketvalue="${localStorage.getItem(key)}">-</button>
+              <button class="button_delete">Nuke</button>
+            </div>
+            
 
           </div>
         </div>
