@@ -9,7 +9,10 @@ const sendOrderbutton = document.querySelector(".button_cart_empty");
 
 sendOrderbutton.style.backgroundColor = "gray";
 
-if (localStorage.getItem("addItemToCart")) {
+let checkLocalStorage = localStorage.getItem("addItemToCart");
+checkLocalStorage = parseInt(checkLocalStorage);
+
+if (checkLocalStorage > 0) {
   sendOrderbutton.disabled = false;
   sendOrderbutton.style.backgroundColor = "#427721";
 } else {

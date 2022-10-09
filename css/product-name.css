@@ -39,8 +39,19 @@ nav {
 }
 .product_name_details {
   min-width: 300px;
+  max-width: 400px;
   background-color: white;
-  margin: 0px 6px;
+  margin: 30px 6px;
+}
+.product_details {
+  max-width: 300px;
+  margin: 50px 0px 120px;
+}
+.product_details h2 {
+  margin: 0px;
+}
+.product_details p {
+  margin-top: 4px;
 }
 
 .radio_parent {
