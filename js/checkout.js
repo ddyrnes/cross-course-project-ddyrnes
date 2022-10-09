@@ -132,6 +132,7 @@ function validate(event) {
     location.href = "orderconfirmation.html";
   } else {
     ctaError.innerHTML = `<div class="cta_error">
+    <div class="error_icon"><i class="fa-2xl fa-solid fa-triangle-exclamation"></i></div>
     <p class="cta_error_p">We apologize!</p>
     <p>We are unable to submit the form.</p>
     <p>Please check that everything is filled out properly and try again.</p>

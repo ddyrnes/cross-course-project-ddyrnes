@@ -4,6 +4,7 @@ import { refreshCart } from "./refreshcart.js";
 const addtocart = document.getElementById("add-to-cart");
 const cartId = addtocart.getAttribute("data-id");
 const cartNumberDisplay = document.querySelector(".cart_number");
+
 const cart_item_added = document.querySelector(".cart_item_added");
 cart_item_added.style.display = "none";
 

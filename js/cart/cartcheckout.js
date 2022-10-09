@@ -35,7 +35,7 @@ function cartTotalCheckout() {
       total += subTotal;
 
       createCheckout.innerHTML += `
-  <div class="summary">
+  <div class="summary" id="${jackets.find(findId).id}">
           <img src="${jackets.find(findId).image}" alt="${jackets.find(findId).name}" class="summary_image" />
           <div class="summary_details">
             <div class="summary_checkout_h3">
@@ -54,12 +54,14 @@ function cartTotalCheckout() {
               <p>Subtotal:</p>
               <p>${subTotal.toFixed(2)} NOK</p>
             </div>
-            <div>
-              <button class="button_add_jacket" data-id="${jackets.find(findId).id}" 
-              data-jacketvalue="${localStorage.getItem(key)}">+</button>
-              <button class="button_remove_jacket" data-id="${jackets.find(findId).id}" 
-              data-jacketvalue="${localStorage.getItem(key)}">-</button>
-              <button class="button_delete">Nuke</button>
+            <div class="button_adjust_cart_parent">
+              <button class="button_adjust_cart button_add_jacket" data-id="${jackets.find(findId).id}" 
+              data-jacketvalue="${localStorage.getItem(key)}"><i class="fa-xl fa-solid fa-square-plus"></i></button>
+              <button class="button_adjust_cart button_remove_jacket" data-id="${jackets.find(findId).id}" 
+              data-jacketvalue="${localStorage.getItem(key)}"><i class="fa-xl fa-solid fa-square-minus"></i></button>
+              <button class="button_adjust_cart button_delete" data-id="${
+                jackets.find(findId).id
+              }"><i class="fa-xl fa-solid fa-trash"></i></button>
             </div>
             
 
@@ -78,44 +80,3 @@ function cartTotalCheckout() {
 }
 
 cartTotalCheckout();
-// function cartTotal() {
-//   let total = 0;
-
-//   for (let i = 0; i < localStorage.length; i++) {
-//     const key = localStorage.key(i);
-//     if (key === "addItemToCart") {
-//       continue;
-//     } else {
-//       function findId(jackets) {
-//         return jackets.id === key;
-//       }
-//       let price = jackets.find(findId).price;
-//       let numberOfItems = localStorage.getItem(key);
-//       let subTotal = price * numberOfItems;
-//       console.log("Price=", total);
-//       total += subTotal;
-//       console.log(total);
-//     }
-//   }
-// }
-// cartTotal();
-// function cartTotalCheckout2() {
-//   let total = 0;
-//   for (let i = 0; i < localStorage.length; i++) {
-//     const key = localStorage.key(i);
-//     if (key === "addItemToCart") {
-//       continue;
-//     } else {
-//       function findId(jackets) {
-//         return jackets.id === key;
-//       }
-//       let price = jackets.find(findId).price;
-//       let numberOfItems = localStorage.getItem(key);
-//       let subTotal = price * numberOfItems; // Changed to subTotal
-//       console.log("Price =", subTotal);
-//       total += subTotal; // This updates your main total
-//       console.log(total);
-//     }
-//   }
-// }
-// cartTotalCheckout2();
