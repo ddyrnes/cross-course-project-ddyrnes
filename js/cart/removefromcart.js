@@ -4,6 +4,8 @@ const addOneItem = document.querySelector(".button_add_jacket");
 const removeOneItem = document.querySelector(".button_remove_jacket");
 const deleteItem = document.querySelector(".button_delete");
 
+const buttons = document.querySelectorAll(".button_add_jacket");
+
 const removeItemId = addOneItem.getAttribute("data-id");
 const addItemId = addOneItem.getAttribute("data-id");
 const cartNumberDisplay = document.querySelector(".cart_number");
@@ -11,6 +13,14 @@ const cartNumberDisplay = document.querySelector(".cart_number");
 addOneItem.addEventListener("click", () => {
   addItemToCart(addItemId);
 });
+
+buttons.forEach(function (button, index) {
+  button.addEventListener("click", function () {
+    console.log(this.id);
+    addItemToCart(this.id);
+  });
+});
+
 removeOneItem.addEventListener("click", () => {
   removeItemToCart(removeItemId);
 });
