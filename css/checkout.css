@@ -52,6 +52,9 @@ h2 {
   margin: 0;
   padding: 0;
 }
+.button_adjust_cart_parent {
+  margin: 5px 0px 10px 0px;
+}
 .main_checkout_page {
   padding: 60px 0px 120px 0px;
   display: flex;
@@ -120,6 +123,7 @@ textarea {
 
 .summary_image {
   width: 100px;
+  height: 100%;
 }
 .summary {
   display: flex;

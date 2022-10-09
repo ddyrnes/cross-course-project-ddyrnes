@@ -54,18 +54,17 @@ function cartTotalCheckout() {
               <p>${subTotal.toFixed(2)} NOK</p>
             </div>
             <div class="button_adjust_cart_parent">
-              <button class="button_adjust_cart button_add_jacket"  id="${jackets.find(findId).id}" data-id="${
-        jackets.find(findId).id
-      }" 
-              data-jacketvalue="${localStorage.getItem(key)}"><i class="fa-xl fa-solid fa-square-plus"></i></button>
-              <button class="button_adjust_cart button_remove_jacket" id="${jackets.find(findId).id}" data-id="${
-        jackets.find(findId).id
-      }" 
+              <button class="button_adjust_cart button_remove_jacket" 
+              id="${jackets.find(findId).id}" data-id="${jackets.find(findId).id}" 
               data-jacketvalue="${localStorage.getItem(key)}"><i class="fa-xl fa-solid fa-square-minus"></i></button>
-              <button class="button_adjust_cart button_delete" id="${jackets.find(findId).id}" data-id="${
-        jackets.find(findId).id
-      }"><i class="fa-xl fa-solid fa-trash"></i></button>
-            </div>
+              <button class="button_adjust_cart button_add_jacket"  
+              id="${jackets.find(findId).id}" data-id="${jackets.find(findId).id}" 
+              data-jacketvalue="${localStorage.getItem(key)}"><i class="fa-xl fa-solid fa-square-plus"></i></button>
+              <button class="button_adjust_cart button_delete" 
+              id="${jackets.find(findId).id}" 
+              data-id="${jackets.find(findId).id}"><i class="fa-xl fa-solid fa-trash"></i></button>
+            
+              </div>
             
 
           </div>

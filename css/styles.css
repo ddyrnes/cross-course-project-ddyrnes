@@ -38,8 +38,8 @@ main {
   position: relative;
 }
 .summary_checkout_total {
-  margin-right: 1%;
-  text-align: center;
+  margin-right: 10%;
+  text-align: end;
 }
 a {
   text-decoration: none;
