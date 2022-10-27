@@ -1,3 +1,22 @@
+const plainUrl = `https://api.dd2.no/wp-json/wc/v3/products`;
+const key = `ck_1fea3ffc8bc99a342906cb9de269c915b0367458`;
+const secret = `cs_2aa926822b33ef9731b67319cd7a99585def833b`;
+const url = `${plainUrl}?consumer_key=${key}&consumer_secret=${secret}`;
+console.log(url);
+
+async function getProducts(url) {
+  const response = await fetch(url);
+  const products = await response.json();
+  products.forEach(function (product) {
+    console.log(product.name);
+    console.log(product.id);
+    console.log(product.description);
+    console.log(product.price);
+    console.log(product.images[0].src);
+  });
+}
+getProducts(url);
+
 export let jackets = [
   {
     id: "100001",
