@@ -15,19 +15,16 @@ export function awaitRemoveCart() {
 
   buttonsAdd.forEach(function (button, index) {
     button.addEventListener("click", function () {
-      console.log(this.id);
       addItemToCart(this.id);
     });
   });
   buttonsRemove.forEach(function (button, index) {
     button.addEventListener("click", function () {
-      console.log(this.id);
       removeItemToCart(this.id);
     });
   });
   buttonsDelete.forEach(function (button, index) {
     button.addEventListener("click", function () {
-      console.log(this.id);
       deleteAllItems(this.id);
     });
   });
