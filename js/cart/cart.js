@@ -1,2 +1,2 @@
-import { jackets } from "./jacketsarray.js";
+// import { jackets } from "./jacketsarray.js";
 import { jacketsDisplay } from "./jacketsdisplay.js";

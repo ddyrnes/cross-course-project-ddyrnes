@@ -1,21 +1,23 @@
-import { jackets } from "./jacketsarray.js";
+// import { jackets } from "./jacketsarray.js";
 import { refreshCart } from "./refreshcart.js";
 
-const addtocart = document.getElementById("add-to-cart");
-const cartId = addtocart.getAttribute("data-id");
 const cartNumberDisplay = document.querySelector(".cart_number");
 
-const cart_item_added = document.querySelector(".cart_item_added");
-cart_item_added.style.display = "none";
+export function awaitAddToCart() {
+  const addtocart = document.getElementById("add-to-cart");
+  const cartId = addtocart.getAttribute("data-id");
 
-addtocart.addEventListener("click", () => {
-  addItemToCart(cartId);
-  setTimeout(function () {
-    cart_item_added.style.display = "none";
-  }, 3000);
-  cart_item_added.style.display = "block";
-});
+  const cart_item_added = document.querySelector(".cart_item_added");
+  cart_item_added.style.display = "none";
 
+  addtocart.addEventListener("click", () => {
+    addItemToCart(cartId);
+    setTimeout(function () {
+      cart_item_added.style.display = "none";
+    }, 3000);
+    cart_item_added.style.display = "block";
+  });
+}
 function addItemToCart(cartId) {
   let productNumber = localStorage.getItem("addItemToCart");
   productNumber = parseInt(productNumber);
@@ -37,7 +39,6 @@ function addItem(cartId) {
     localStorage.setItem(cartId, 1);
   }
 }
-
 refreshCart();
 
 // document.getElementById("addtocart");
