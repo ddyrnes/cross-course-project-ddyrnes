@@ -37,8 +37,6 @@ git clone https://github.com/ddyrnes/cross-course-project-ddyrnes
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
-
 dev.dyrnes@gmail.com
 
 [My LinkedIn page](https://www.linkedin.com/in/daniel-dyrnes-3a478a253/)
