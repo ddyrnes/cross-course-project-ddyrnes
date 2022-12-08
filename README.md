@@ -29,22 +29,10 @@ The cart function still needs some work, and is not 100% functional.
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
 Clone the repo:
 
 ```bash
-git clone [git@github.com:NoroffFEU/portfolio-1-example.git](https://github.com/ddyrnes/cross-course-project-ddyrnes)
-```
-
-### Running
-
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
-
-```bash
-npm run start
+git clone https://github.com/ddyrnes/cross-course-project-ddyrnes
 ```
 
 ## Contributing
