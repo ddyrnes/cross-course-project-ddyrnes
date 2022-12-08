@@ -2,7 +2,7 @@
 
 ![Screenshot](rainydays_screenshot.jpg)
 
-A simple website that sells raincoats.
+A simple website that display and sell raincoats.
 
 ## Description
 
