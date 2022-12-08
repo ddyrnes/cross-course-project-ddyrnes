@@ -1,25 +1,29 @@
-# Your project title
+# Rainydays
 
 ![Screenshot](rainydays_screenshot.jpg)
 
-A simple overview of the use/purpose of the project.
+A simple website that sells raincoats.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+This is a school project which we were given a task to create a functional website that sells raincoats.
+We used plain HTML, CSS and JS to build the site. 
+The products are from WordPress "WooCommerce" plugin, where we created several different items to display dynamicall on our site.
+Rainydays has several different pages:
+- Home
+- About
+- Contact
+- Products
+- Specific-product
 
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
+The cart function still needs some work, and is not 100% functional.
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- HTML
+- CSS
+- JS
+- Wordpress API
 
 ## Getting Started
 
@@ -27,16 +31,10 @@ You can list a the tech stack that you've used over here
 
 This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
 
-1. Clone the repo:
+Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-```
-
-2. Install the dependencies:
-
-```
-npm install
+git clone [git@github.com:NoroffFEU/portfolio-1-example.git](https://github.com/ddyrnes/cross-course-project-ddyrnes)
 ```
 
 ### Running
@@ -57,14 +55,7 @@ Here you can detail any information you want to provide regarding contributing t
 
 This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
-[My Twitter page](www.twitter.com)
+[My Email](dev.dyrnes@gmail.com)
 
-[My LinkedIn page](www.linkedin.com)
+[My LinkedIn page]([www.linkedin.com](https://www.linkedin.com/in/daniel-dyrnes-3a478a253/))
 
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
-
-## Acknowledgments
-
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
