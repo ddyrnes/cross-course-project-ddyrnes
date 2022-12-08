@@ -1,6 +1,6 @@
 # Your project title
 
-
+![Screenshot](rainydays_screenshot.jpg)
 
 A simple overview of the use/purpose of the project.
 
